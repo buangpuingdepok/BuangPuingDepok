@@ -1,1303 +1,577 @@
 <!doctype html>
+<html lang="id">
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>
-      Buang Puing Depok - Solusi Angkut Puing Cepat &amp; Terpercaya
-    </title>
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buang Puing Depok — Angkut Puing, Bongkar, & Urug Tanah Cepat di Depok</title>
+    <meta name="description"
+        content="Jasa angkut puing bangunan, bongkar rumah, urug tanah, dan sewa dump truck di Depok. Respon cepat, harga jelas di awal, area layanan seluruh Depok dan sekitarnya." />
+    <meta name="theme-color" content="#FAF7F1" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Buang Puing Depok — Angkut Puing Cepat & Terpercaya" />
+    <meta property="og:description"
+        content="Jasa angkut puing, bongkar bangunan, dan urug tanah di Depok. Chat WhatsApp untuk estimasi gratis." />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="id_ID" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@400..700&amp;family=Inter:wght@400..700&amp;display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-      rel="stylesheet"
-    />
-    <script id="tailwind-config">
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            colors: {
-              "primary-fixed-dim": "#ffb4a3",
-              "border-subtle": "#E5E5E1",
-              "inverse-surface": "#2f3130",
-              "inverse-primary": "#ffb4a3",
-              "surface-dim": "#dadad8",
-              "inverse-on-surface": "#f1f1ef",
-              primary: "#9f351e",
-              "on-background": "#1a1c1b",
-              outline: "#8b716c",
-              tertiary: "#00636f",
-              "error-container": "#ffdad6",
-              "surface-variant": "#e2e3e1",
-              "concrete-grey": "#A3A3A3",
-              "on-secondary": "#ffffff",
-              "on-secondary-fixed": "#1b1c1c",
-              "primary-fixed": "#ffdad2",
-              error: "#ba1a1a",
-              surface: "#f9f9f7",
-              background: "#f9f9f7",
-              "on-error-container": "#93000a",
-              "on-secondary-fixed-variant": "#474747",
-              "on-surface-variant": "#57423d",
-              "tertiary-fixed": "#9cf0ff",
-              "surface-bright": "#f9f9f7",
-              "on-tertiary-container": "#ebfcff",
-              "on-tertiary-fixed": "#001f24",
-              "on-tertiary": "#ffffff",
-              "on-primary-fixed": "#3d0600",
-              "surface-container-lowest": "#ffffff",
-              "surface-container": "#eeeeec",
-              "on-tertiary-fixed-variant": "#004f58",
-              "secondary-fixed": "#e4e2e1",
-              "secondary-container": "#e4e2e1",
-              "on-primary": "#ffffff",
-              "on-secondary-container": "#656464",
-              "surface-container-high": "#e8e8e6",
-              "tertiary-container": "#007e8d",
-              secondary: "#5f5e5e",
-              "tertiary-fixed-dim": "#78d4e4",
-              "surface-container-highest": "#e2e3e1",
-              "surface-container-low": "#f4f4f2",
-              "on-primary-container": "#fff6f4",
-              "whatsapp-green": "#25D366",
-              "secondary-fixed-dim": "#c8c6c6",
-              "outline-variant": "#dec0b9",
-              "on-error": "#ffffff",
-              "on-primary-fixed-variant": "#85230d",
-              "primary-container": "#c04d33",
-              "surface-tint": "#a63a22",
-              "on-surface": "#1a1c1b",
-            },
-            borderRadius: {
-              DEFAULT: "0.125rem",
-              lg: "0.25rem",
-              xl: "0.5rem",
-              full: "0.75rem",
-            },
-            spacing: {
-              "container-max": "1200px",
-              "section-gap": "80px",
-              "margin-desktop": "64px",
-              "margin-mobile": "20px",
-              base: "8px",
-              gutter: "24px",
-            },
-            fontFamily: {
-              "label-sm": ["Inter"],
-              "display-lg-mobile": ["Archivo Narrow"],
-              "body-md": ["Inter"],
-              "headline-sm": ["Archivo Narrow"],
-              "display-lg": ["Archivo Narrow"],
-              "label-bold": ["Inter"],
-              "headline-md": ["Archivo Narrow"],
-              "body-lg": ["Inter"],
-            },
-            fontSize: {
-              "label-sm": ["12px", { lineHeight: "16px", fontWeight: "500" }],
-              "display-lg-mobile": [
-                "36px",
-                {
-                  lineHeight: "40px",
-                  letterSpacing: "-0.02em",
-                  fontWeight: "700",
-                },
-              ],
-              "body-md": ["16px", { lineHeight: "24px", fontWeight: "400" }],
-              "headline-sm": [
-                "28px",
-                {
-                  lineHeight: "34px",
-                  letterSpacing: "-0.01em",
-                  fontWeight: "700",
-                },
-              ],
-              "display-lg": [
-                "56px",
-                {
-                  lineHeight: "60px",
-                  letterSpacing: "-0.02em",
-                  fontWeight: "800",
-                },
-              ],
-              "label-bold": [
-                "14px",
-                {
-                  lineHeight: "20px",
-                  letterSpacing: "0.05em",
-                  fontWeight: "600",
-                },
-              ],
-              "headline-md": [
-                "40px",
-                {
-                  lineHeight: "46px",
-                  letterSpacing: "-0.02em",
-                  fontWeight: "700",
-                },
-              ],
-              "body-lg": ["18px", { lineHeight: "28px", fontWeight: "400" }],
-            },
-          },
-        },
-      };
-    </script>
-  </head>
-  <body
-    class="bg-surface text-on-surface font-body-md antialiased selection:bg-primary-container selection:text-on-primary-container relative"
-  >
-    <!-- TopNavBar -->
-    <nav
-      class="fixed top-0 w-full z-50 border-b border-border-subtle bg-surface/90 dark:bg-surface-dim/90 backdrop-blur-md transition-all duration-300 ease-in-out"
-    >
-      <div
-        class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto"
-      >
-        <a
-          class="font-display-lg-mobile text-display-lg-mobile tracking-tighter text-on-surface font-bold"
-          href="#"
-          >Buang Puing Depok</a
-        >
-        <div
-          class="hidden md:flex gap-8 items-center font-label-bold text-label-bold uppercase tracking-wider"
-        >
-          <a
-            class="text-secondary hover:text-primary transition-colors hover:bg-primary-container/10 px-2 py-1 rounded"
-            href="#"
-            >Beranda</a
-          >
-          <a class="text-primary border-b-2 border-primary pb-1" href="#layanan"
-            >Layanan</a
-          >
-          <a
-            class="text-secondary hover:text-primary transition-colors hover:bg-primary-container/10 px-2 py-1 rounded"
-            href="#galeri"
-            >Galeri</a
-          >
-          <a
-            class="text-secondary hover:text-primary transition-colors hover:bg-primary-container/10 px-2 py-1 rounded"
-            href="#kontak"
-            >Kontak</a
-          >
-          <a
-            class="text-secondary hover:text-primary transition-colors hover:bg-primary-container/10 px-2 py-1 rounded"
-            href="#tentang"
-            >Tentang Kami</a
-          >
-        </div>
-        <a
-          class="hidden md:inline-flex items-center justify-center bg-primary text-on-primary font-label-bold text-label-bold px-6 py-3 rounded hover:bg-primary-container transition-colors shadow-md"
-          href="https://wa.me/6281234567890"
-        >
-          <span class="material-symbols-outlined mr-2 text-[18px]">chat</span>
-          WhatsApp
-        </a>
-        <button class="md:hidden text-on-surface p-2">
-          <span class="material-symbols-outlined">menu</span>
-        </button>
-      </div>
-    </nav>
-    <!-- Floating WhatsApp CTA -->
-    <a
-      class="fixed bottom-6 right-6 z-50 bg-whatsapp-green text-white p-4 rounded-full shadow-[0_4px_14px_0_rgba(37,211,102,0.39)] hover:scale-105 transition-transform flex items-center justify-center"
-      href="https://wa.me/6281234567890"
-    >
-      <span class="material-symbols-outlined text-[32px]">chat</span>
-    </a>
-    <main class="pt-[100px] md:pt-[120px]">
-      <!-- Hero Section -->
-      <section
-        class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto pb-12"
-      >
-        <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
-          <div class="md:col-span-6 flex flex-col gap-6 items-start">
-            <div class="flex flex-col gap-2">
-              <span
-                class="text-primary font-label-bold tracking-widest uppercase text-sm"
-                >Profesional &amp; Terpercaya</span
-              >
-              <div class="h-1 w-12 bg-primary"></div>
-            </div>
-            <h1
-              class="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg text-on-surface tracking-tighter"
-            >
-              Solusi Angkut Puing Cepat &amp; Terpercaya di Depok
-            </h1>
-            <p class="font-body-lg text-body-lg text-secondary">
-              Layanan profesional pembuangan puing, penyewaan armada, dan
-              pekerjaan tanah untuk proyek konstruksi dan renovasi Anda. Bersih,
-              cepat, dan sesuai jadwal.
-            </p>
-            <div class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto mt-4">
-              <a
-                class="inline-flex items-center justify-center bg-primary text-on-primary font-label-bold text-label-bold px-8 py-4 rounded hover:bg-primary-container transition-colors shadow-md w-full sm:w-auto"
-                href="https://wa.me/6281234567890"
-              >
-                Hubungi Kami
-              </a>
-              <a
-                class="inline-flex items-center justify-center border-2 border-primary text-primary font-label-bold text-label-bold px-8 py-4 rounded hover:bg-primary hover:text-on-primary transition-colors w-full sm:w-auto"
-                href="#layanan"
-              >
-                Lihat Layanan
-              </a>
-            </div>
-            <div
-              class="mt-6 flex flex-wrap gap-4 items-center font-label-sm text-secondary"
-            >
-              <span class="flex items-center gap-1"
-                ><span
-                  class="material-symbols-outlined text-[16px] text-primary"
-                  >check_circle</span
-                >
-                500+ Proyek Selesai</span
-              >
-              <span class="hidden sm:inline text-border-subtle">•</span>
-              <span class="flex items-center gap-1"
-                ><span
-                  class="material-symbols-outlined text-[16px] text-primary"
-                  >star</span
-                >
-                4.9/5 Rating</span
-              >
-              <span class="hidden sm:inline text-border-subtle">•</span>
-              <span class="flex items-center gap-1"
-                ><span
-                  class="material-symbols-outlined text-[16px] text-primary"
-                  >bolt</span
-                >
-                Respon &lt;15 Menit</span
-              >
-            </div>
-          </div>
-          <div
-            class="md:col-span-6 mt-8 md:mt-0 relative aspect-[4/3] rounded-lg shadow-xl overflow-hidden group"
-          >
-            <img
-              alt="Armada Truk"
-              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-              src="https://lh3.googleusercontent.com/aida/AP1WRLv8NQ0xMYrzuG8TC2f-_Dc9fL9-kzNXwa2uiRr_zPI1PTCk3zfpSST1c9kp7T6ixhyV8BaGvfr0TaZQCakQI1V20_rJ9X5odmZuRNzcdghc1VQFhwMC29h-x5HEYycUXzKnXUmos-q3EOawM1fluxmYHk42lRWCSNrervg7n9q3Rl1T8rKoF6HxlKT3W24BmiCApFTiolQuZOEBCSgUrV_aGRUJC0IeAl0yThn5KI_b8GCZslVNwZ8r448"
-            />
-            <div
-              class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"
-            ></div>
-          </div>
-        </div>
-      </section>
-      <!-- Stats Band -->
-      <section class="bg-inverse-surface text-inverse-on-surface py-16">
-        <div
-          class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto"
-        >
-          <div
-            class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-x divide-border-subtle/20"
-          >
-            <div class="flex flex-col gap-2">
-              <span
-                class="font-display-lg text-4xl md:text-5xl text-primary-fixed"
-                >10+</span
-              >
-              <span class="font-label-bold text-label-bold text-surface-dim"
-                >Tahun Pengalaman</span
-              >
-            </div>
-            <div class="flex flex-col gap-2">
-              <span
-                class="font-display-lg text-4xl md:text-5xl text-primary-fixed"
-                >1500+</span
-              >
-              <span class="font-label-bold text-label-bold text-surface-dim"
-                >Proyek Selesai</span
-              >
-            </div>
-            <div class="flex flex-col gap-2">
-              <span
-                class="font-display-lg text-4xl md:text-5xl text-primary-fixed"
-                >15+</span
-              >
-              <span class="font-label-bold text-label-bold text-surface-dim"
-                >Armada Aktif</span
-              >
-            </div>
-            <div class="flex flex-col gap-2">
-              <span
-                class="font-display-lg text-4xl md:text-5xl text-primary-fixed"
-                >100%</span
-              >
-              <span class="font-label-bold text-label-bold text-surface-dim"
-                >Seluruh Kota Depok</span
-              >
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Kenapa Pilih Kami -->
-      <section class="bg-surface relative py-section-gap">
-        <div
-          class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto relative z-10"
-        >
-          <div class="flex flex-col gap-2 mb-10 text-center items-center">
-            <span
-              class="text-primary font-label-bold tracking-widest uppercase text-sm"
-              >Kenapa Harus Kami</span
-            >
-            <div class="h-1 w-12 bg-primary"></div>
-          </div>
-          <div
-            class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-gutter"
-          >
-            <div
-              class="p-6 bg-surface-container-lowest rounded-xl shadow-sm border border-border-subtle flex flex-col gap-4 items-start hover:shadow-md transition-shadow"
-            >
-              <div
-                class="w-14 h-14 rounded-xl bg-primary-container flex items-center justify-center text-on-primary-container shadow-sm"
-              >
-                <span class="material-symbols-outlined text-[28px]">timer</span>
-              </div>
-              <h3
-                class="font-headline-sm text-headline-sm text-on-surface tracking-tight"
-              >
-                Respon Cepat
-              </h3>
-              <p class="font-body-md text-body-md text-secondary">
-                Armada siap meluncur dalam waktu singkat ke lokasi proyek Anda.
-              </p>
-            </div>
-            <div
-              class="p-6 bg-surface-container-lowest rounded-xl shadow-sm border border-border-subtle flex flex-col gap-4 items-start hover:shadow-md transition-shadow"
-            >
-              <div
-                class="w-14 h-14 rounded-xl bg-primary-container flex items-center justify-center text-on-primary-container shadow-sm"
-              >
-                <span class="material-symbols-outlined text-[28px]"
-                  >receipt_long</span
-                >
-              </div>
-              <h3
-                class="font-headline-sm text-headline-sm text-on-surface tracking-tight"
-              >
-                Harga Transparan
-              </h3>
-              <p class="font-body-md text-body-md text-secondary">
-                Estimasi biaya jelas di awal, tanpa biaya tersembunyi.
-              </p>
-            </div>
-            <div
-              class="p-6 bg-surface-container-lowest rounded-xl shadow-sm border border-border-subtle flex flex-col gap-4 items-start hover:shadow-md transition-shadow"
-            >
-              <div
-                class="w-14 h-14 rounded-xl bg-primary-container flex items-center justify-center text-on-primary-container shadow-sm"
-              >
-                <span class="material-symbols-outlined text-[28px]"
-                  >local_shipping</span
-                >
-              </div>
-              <h3
-                class="font-headline-sm text-headline-sm text-on-surface tracking-tight"
-              >
-                Armada Lengkap
-              </h3>
-              <p class="font-body-md text-body-md text-secondary">
-                Dari pickup kecil hingga dump truck besar tersedia.
-              </p>
-            </div>
-            <div
-              class="p-6 bg-surface-container-lowest rounded-xl shadow-sm border border-border-subtle flex flex-col gap-4 items-start hover:shadow-md transition-shadow"
-            >
-              <div
-                class="w-14 h-14 rounded-xl bg-primary-container flex items-center justify-center text-on-primary-container shadow-sm"
-              >
-                <span class="material-symbols-outlined text-[28px]">map</span>
-              </div>
-              <h3
-                class="font-headline-sm text-headline-sm text-on-surface tracking-tight"
-              >
-                Area Depok &amp; Sekitarnya
-              </h3>
-              <p class="font-body-md text-body-md text-secondary">
-                Fokus pelayanan prima untuk wilayah Depok dan perbatasan.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Services -->
-      <section
-        class="bg-primary-container px-margin-mobile md:px-margin-desktop py-section-gap border-y border-primary"
-        id="layanan"
-      >
-        <div class="max-w-container-max mx-auto">
-          <div class="mb-12 flex flex-col items-center">
-            <div class="flex flex-col gap-2 mb-4 items-center">
-              <span
-                class="text-on-primary-container font-label-bold tracking-widest uppercase text-sm"
-                >Solusi Lengkap</span
-              >
-              <div class="h-1 w-12 bg-on-primary-container"></div>
-            </div>
-            <h2
-              class="font-headline-md text-headline-md text-on-primary-container tracking-tight mb-4 text-center"
-            >
-              Layanan Kami
-            </h2>
-            <p
-              class="font-body-lg text-primary-fixed-dim text-center max-w-2xl mx-auto"
-            >
-              Solusi lengkap untuk kebutuhan manajemen material dan persiapan
-              lahan proyek Anda.
-            </p>
-          </div>
-          <div
-            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter"
-          >
-            <!-- Card 1 -->
-            <div
-              class="group bg-surface-container-lowest rounded-xl flex flex-col overflow-hidden hover:shadow-2xl hover:-translate-y-1 transition-all duration-300"
-            >
-              <div class="h-56 overflow-hidden relative">
-                <img
-                  alt="Buang Puing"
-                  class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                  src="https://lh3.googleusercontent.com/aida/AP1WRLsGFGJIBh_xjGIDe9KpqUOCM756fl6j-PbepkKmm9xJizesKnOQPbbIn_k1hd0dxL0MddmndxJD8sbV2_EJm5mOyU4GVCYIBoZorv6irUxpPqvEYPzs8CfKlFYP8wOepNuwMLp_aI-BbVlxhpzNYAsKnmBrhHvY0USEan5bvY1hcRqzKj5kwlrrglkGrLZfxqHwUJ-Tju81uifvUL6ZcW2hTZ1BRW2DSMgsSHGCV33eXuutora79DOgpUI"
-                />
-                <div
-                  class="absolute top-4 right-4 bg-surface/90 backdrop-blur-sm px-3 py-1 rounded font-label-bold text-label-sm text-on-surface shadow-sm"
-                >
-                  Mulai Rp 200rb
-                </div>
-              </div>
-              <div class="p-8 flex flex-col gap-3 flex-grow">
-                <h3
-                  class="font-headline-sm text-headline-sm text-on-surface tracking-tight"
-                >
-                  Buang Puing
-                </h3>
-                <p
-                  class="font-body-md text-body-md text-secondary mb-4 flex-grow"
-                >
-                  Jasa pengangkutan dan pembuangan sisa material proyek
-                  konstruksi dan renovasi secara legal.
-                </p>
-                <a
-                  class="inline-flex items-center text-primary font-label-bold text-label-bold hover:text-primary-container transition-colors"
-                  href="https://wa.me/6281234567890?text=Halo%20saya%20butuh%20jasa%20Buang%20Puing"
-                >
-                  Pesan Sekarang
-                  <span class="material-symbols-outlined ml-1 text-[16px]"
-                    >arrow_forward</span
-                  >
-                </a>
-              </div>
-            </div>
-            <!-- Card 2 -->
-            <div
-              class="group bg-surface-container-lowest rounded-xl flex flex-col overflow-hidden hover:shadow-2xl hover:-translate-y-1 transition-all duration-300"
-            >
-              <div class="h-56 overflow-hidden relative">
-                <img
-                  alt="Sewa Pickup &amp; Truk"
-                  class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                  src="https://lh3.googleusercontent.com/aida/AP1WRLv8NQ0xMYrzuG8TC2f-_Dc9fL9-kzNXwa2uiRr_zPI1PTCk3zfpSST1c9kp7T6ixhyV8BaGvfr0TaZQCakQI1V20_rJ9X5odmZuRNzcdghc1VQFhwMC29h-x5HEYycUXzKnXUmos-q3EOawM1fluxmYHk42lRWCSNrervg7n9q3Rl1T8rKoF6HxlKT3W24BmiCApFTiolQuZOEBCSgUrV_aGRUJC0IeAl0yThn5KI_b8GCZslVNwZ8r448"
-                />
-                <div
-                  class="absolute top-4 right-4 bg-surface/90 backdrop-blur-sm px-3 py-1 rounded font-label-bold text-label-sm text-on-surface shadow-sm"
-                >
-                  Mulai Rp 150rb
-                </div>
-              </div>
-              <div class="p-8 flex flex-col gap-3 flex-grow">
-                <h3
-                  class="font-headline-sm text-headline-sm text-on-surface tracking-tight"
-                >
-                  Sewa Pickup &amp; Truk
-                </h3>
-                <p
-                  class="font-body-md text-body-md text-secondary mb-4 flex-grow"
-                >
-                  Penyewaan harian atau ritase untuk kebutuhan logistik dan
-                  pemindahan barang material.
-                </p>
-                <a
-                  class="inline-flex items-center text-primary font-label-bold text-label-bold hover:text-primary-container transition-colors"
-                  href="https://wa.me/6281234567890?text=Halo%20saya%20butuh%20Sewa%20Truk"
-                >
-                  Pesan Sekarang
-                  <span class="material-symbols-outlined ml-1 text-[16px]"
-                    >arrow_forward</span
-                  >
-                </a>
-              </div>
-            </div>
-            <!-- Card 3 -->
-            <div
-              class="group bg-surface-container-lowest rounded-xl flex flex-col overflow-hidden hover:shadow-2xl hover:-translate-y-1 transition-all duration-300"
-            >
-              <div class="h-56 overflow-hidden relative">
-                <img
-                  alt="Pengurugan Tanah"
-                  class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                  src="https://lh3.googleusercontent.com/aida/AP1WRLvmV5xPikxdI5S1-8mrfAoUzkmRPbufK1Zf7pyjiHrxuWOYj5J5V914k5_LhSMTbItxKwejmDhqH_m2guHiMFxDYWfonvWGTfVqLegPqLK0Q-O-5ucVfS5BlFkUL5HyOI78_Noa_lXAyNM1gmiNSIB12l45YxzIwwDOES8X7HDpbbBR_VBg38B9fkH8Knz5E079iIxQ7oV-Tx7s47aN6rM-TwxSOXgjnZp4-RYZAtBgD4vHXdTls6bx4eU"
-                />
-                <div
-                  class="absolute top-4 right-4 bg-surface/90 backdrop-blur-sm px-3 py-1 rounded font-label-bold text-label-sm text-on-surface shadow-sm"
-                >
-                  Mulai Rp 300rb
-                </div>
-              </div>
-              <div class="p-8 flex flex-col gap-3 flex-grow">
-                <h3
-                  class="font-headline-sm text-headline-sm text-on-surface tracking-tight"
-                >
-                  Pengurugan Tanah
-                </h3>
-                <p
-                  class="font-body-md text-body-md text-secondary mb-4 flex-grow"
-                >
-                  Suplai tanah merah berkualitas untuk perataan lahan dan
-                  peninggian lantai bangunan.
-                </p>
-                <a
-                  class="inline-flex items-center text-primary font-label-bold text-label-bold hover:text-primary-container transition-colors"
-                  href="https://wa.me/6281234567890?text=Halo%20saya%20butuh%20Pengurugan%20Tanah"
-                >
-                  Pesan Sekarang
-                  <span class="material-symbols-outlined ml-1 text-[16px]"
-                    >arrow_forward</span
-                  >
-                </a>
-              </div>
-            </div>
-            <!-- Card 4 -->
-            <div
-              class="group bg-surface-container-lowest rounded-xl flex flex-col overflow-hidden hover:shadow-2xl hover:-translate-y-1 transition-all duration-300"
-            >
-              <div class="h-56 overflow-hidden relative">
-                <img
-                  alt="Penggalian"
-                  class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                  src="https://lh3.googleusercontent.com/aida/AP1WRLvmV5xPikxdI5S1-8mrfAoUzkmRPbufK1Zf7pyjiHrxuWOYj5J5V914k5_LhSMTbItxKwejmDhqH_m2guHiMFxDYWfonvWGTfVqLegPqLK0Q-O-5ucVfS5BlFkUL5HyOI78_Noa_lXAyNM1gmiNSIB12l45YxzIwwDOES8X7HDpbbBR_VBg38B9fkH8Knz5E079iIxQ7oV-Tx7s47aN6rM-TwxSOXgjnZp4-RYZAtBgD4vHXdTls6bx4eU"
-                />
-                <div
-                  class="absolute top-4 right-4 bg-surface/90 backdrop-blur-sm px-3 py-1 rounded font-label-bold text-label-sm text-on-surface shadow-sm"
-                >
-                  Sesuai Survey
-                </div>
-              </div>
-              <div class="p-8 flex flex-col gap-3 flex-grow">
-                <h3
-                  class="font-headline-sm text-headline-sm text-on-surface tracking-tight"
-                >
-                  Penggalian
-                </h3>
-                <p
-                  class="font-body-md text-body-md text-secondary mb-4 flex-grow"
-                >
-                  Jasa gali tanah untuk pondasi, kolam renang, atau saluran air
-                  menggunakan tenaga manual maupun alat berat.
-                </p>
-                <a
-                  class="inline-flex items-center text-primary font-label-bold text-label-bold hover:text-primary-container transition-colors"
-                  href="https://wa.me/6281234567890?text=Halo%20saya%20butuh%20jasa%20Penggalian"
-                >
-                  Pesan Sekarang
-                  <span class="material-symbols-outlined ml-1 text-[16px]"
-                    >arrow_forward</span
-                  >
-                </a>
-              </div>
-            </div>
-            <!-- Card 5 -->
-            <div
-              class="group bg-surface-container-lowest rounded-xl flex flex-col overflow-hidden hover:shadow-2xl hover:-translate-y-1 transition-all duration-300"
-            >
-              <div class="h-56 overflow-hidden relative">
-                <img
-                  alt="Bongkaran Bangunan"
-                  class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                  src="https://lh3.googleusercontent.com/aida/AP1WRLvwpIddroV04LZsM_rn-beAaJSiU--uY2f6y9duAlWZjv2OLvJ5cS09zAgG4Pqk86hwOBskUT1Uq6GDddvlHN6aYUUNy3S6oO9Kgs_tZE7FeRtOlsOdWUFh4T8GyoLcKoLDL9Y47DWO6RK9OVRq9KpSvKqURYe2tPK73HrMy1-IxBuBmqAPFfi4aRB3JzTlip2gWkVY9DHri6wZ7nQJNvMcPy1bOF0brCWUFhzdTbTQQqlv9swa0sf9iqc"
-                />
-                <div
-                  class="absolute top-4 right-4 bg-surface/90 backdrop-blur-sm px-3 py-1 rounded font-label-bold text-label-sm text-on-surface shadow-sm"
-                >
-                  Sesuai Survey
-                </div>
-              </div>
-              <div class="p-8 flex flex-col gap-3 flex-grow">
-                <h3
-                  class="font-headline-sm text-headline-sm text-on-surface tracking-tight"
-                >
-                  Bongkaran Bangunan
-                </h3>
-                <p
-                  class="font-body-md text-body-md text-secondary mb-4 flex-grow"
-                >
-                  Pembongkaran rumah, gedung, atau partisi interior dengan aman
-                  dan efisien.
-                </p>
-                <a
-                  class="inline-flex items-center text-primary font-label-bold text-label-bold hover:text-primary-container transition-colors"
-                  href="https://wa.me/6281234567890?text=Halo%20saya%20butuh%20Bongkaran%20Bangunan"
-                >
-                  Pesan Sekarang
-                  <span class="material-symbols-outlined ml-1 text-[16px]"
-                    >arrow_forward</span
-                  >
-                </a>
-              </div>
-            </div>
-            <!-- Card 6 -->
-            <div
-              class="group bg-surface-container-lowest rounded-xl flex flex-col overflow-hidden hover:shadow-2xl hover:-translate-y-1 transition-all duration-300"
-            >
-              <div class="h-56 overflow-hidden relative">
-                <img
-                  alt="Pembersihan Lahan"
-                  class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                  src="https://lh3.googleusercontent.com/aida/AP1WRLvmV5xPikxdI5S1-8mrfAoUzkmRPbufK1Zf7pyjiHrxuWOYj5J5V914k5_LhSMTbItxKwejmDhqH_m2guHiMFxDYWfonvWGTfVqLegPqLK0Q-O-5ucVfS5BlFkUL5HyOI78_Noa_lXAyNM1gmiNSIB12l45YxzIwwDOES8X7HDpbbBR_VBg38B9fkH8Knz5E079iIxQ7oV-Tx7s47aN6rM-TwxSOXgjnZp4-RYZAtBgD4vHXdTls6bx4eU"
-                />
-                <div
-                  class="absolute top-4 right-4 bg-surface/90 backdrop-blur-sm px-3 py-1 rounded font-label-bold text-label-sm text-on-surface shadow-sm"
-                >
-                  Sesuai Survey
-                </div>
-              </div>
-              <div class="p-8 flex flex-col gap-3 flex-grow">
-                <h3
-                  class="font-headline-sm text-headline-sm text-on-surface tracking-tight"
-                >
-                  Pembersihan Lahan
-                </h3>
-                <p
-                  class="font-body-md text-body-md text-secondary mb-4 flex-grow"
-                >
-                  Land clearing untuk menyiapkan lahan kosong sebelum proses
-                  pembangunan dimulai.
-                </p>
-                <a
-                  class="inline-flex items-center text-primary font-label-bold text-label-bold hover:text-primary-container transition-colors"
-                  href="https://wa.me/6281234567890?text=Halo%20saya%20butuh%20Pembersihan%20Lahan"
-                >
-                  Pesan Sekarang
-                  <span class="material-symbols-outlined ml-1 text-[16px]"
-                    >arrow_forward</span
-                  >
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Before/After -->
-      <section
-        class="py-section-gap bg-inverse-surface text-inverse-on-surface"
-      >
-        <div
-          class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto"
-        >
-          <div class="text-center mb-12 flex flex-col items-center">
-            <div class="flex flex-col gap-2 mb-4 items-center">
-              <span
-                class="text-primary-fixed font-label-bold tracking-widest uppercase text-sm"
-                >Bukti Nyata</span
-              >
-              <div class="h-1 w-12 bg-primary-fixed"></div>
-            </div>
-            <h2 class="font-headline-md text-headline-md mb-4 tracking-tight">
-              Sebelum &amp; Sesudah
-            </h2>
-            <p class="font-body-lg text-surface-dim">
-              Hasil nyata dari komitmen kami pada kebersihan dan
-              profesionalisme.
-            </p>
-          </div>
-          <div
-            class="rounded-xl overflow-hidden shadow-2xl max-w-4xl mx-auto border-4 border-surface/10"
-          >
-            <img
-              alt="Sebelum dan Sesudah Pembersihan Puing"
-              class="w-full h-auto"
-              src="https://lh3.googleusercontent.com/aida/AP1WRLvPK6b5IaRkayfQjBKE_rwG3g8k8cB00g2HkFwyP6AJIKBnmBSdnTGt69j5H0dFxwaUYt5qaLAjq7xmrNwwr3fAAEDdyixCmq-SRgAHKCKtmIJ-rW5vGOBjV-ZLB-YrB2yalJ5HFtY-QsrICJ6Fzaymw9pLSVrqvbCshtqXO-7HkBdJ779PvwJ4qmwWrAeCWYDWSvxDdu-940Ln_prgcH3ZzADIz4CL_OfrloAsRmkB9vT_hhLwEp8-oEk"
-            />
-          </div>
-        </div>
-      </section>
-      <!-- Process / Cara Kerja -->
-      <section
-        class="py-section-gap bg-surface-container-low border-y border-border-subtle"
-      >
-        <div
-          class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto"
-        >
-          <div class="flex flex-col gap-2 mb-16 text-center items-center">
-            <span
-              class="text-primary font-label-bold tracking-widest uppercase text-sm"
-              >Proses Cepat</span
-            >
-            <div class="h-1 w-12 bg-primary"></div>
-            <h2
-              class="font-headline-md text-headline-md text-on-surface tracking-tight mt-4"
-            >
-              Cara Kerja
-            </h2>
-          </div>
-          <div class="relative">
-            <!-- Horizontal Line -->
-            <div
-              class="hidden md:block absolute top-7 left-12 right-12 h-0.5 bg-border-subtle z-0"
-            ></div>
-            <!-- Vertical Line Mobile -->
-            <div
-              class="md:hidden absolute left-7 top-6 bottom-6 w-0.5 bg-border-subtle z-0"
-            ></div>
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 relative z-10">
-              <!-- Step 1 -->
-              <div
-                class="flex flex-row md:flex-col items-start md:items-center text-left md:text-center gap-4"
-              >
-                <div
-                  class="w-14 h-14 rounded-xl bg-primary text-on-primary flex items-center justify-center shrink-0 shadow-md"
-                >
-                  <span class="material-symbols-outlined text-[28px]"
-                    >chat</span
-                  >
-                </div>
-                <div>
-                  <h3
-                    class="font-headline-sm text-lg text-on-surface mb-2 tracking-tight"
-                  >
-                    1. Hubungi Kami
-                  </h3>
-                  <p class="font-body-md text-sm text-secondary">
-                    Kirim detail lokasi dan foto puing via WhatsApp.
-                  </p>
-                </div>
-              </div>
-              <!-- Step 2 -->
-              <div
-                class="flex flex-row md:flex-col items-start md:items-center text-left md:text-center gap-4"
-              >
-                <div
-                  class="w-14 h-14 rounded-xl bg-surface border-2 border-primary text-primary flex items-center justify-center shrink-0 shadow-sm"
-                >
-                  <span class="material-symbols-outlined text-[28px]"
-                    >handshake</span
-                  >
-                </div>
-                <div>
-                  <h3
-                    class="font-headline-sm text-lg text-on-surface mb-2 tracking-tight"
-                  >
-                    2. Estimasi &amp; Nego
-                  </h3>
-                  <p class="font-body-md text-sm text-secondary">
-                    Dapatkan harga terbaik dan sepakati jadwal.
-                  </p>
-                </div>
-              </div>
-              <!-- Step 3 -->
-              <div
-                class="flex flex-row md:flex-col items-start md:items-center text-left md:text-center gap-4"
-              >
-                <div
-                  class="w-14 h-14 rounded-xl bg-surface border-2 border-primary text-primary flex items-center justify-center shrink-0 shadow-sm"
-                >
-                  <span class="material-symbols-outlined text-[28px]"
-                    >local_shipping</span
-                  >
-                </div>
-                <div>
-                  <h3
-                    class="font-headline-sm text-lg text-on-surface mb-2 tracking-tight"
-                  >
-                    3. Penjemputan
-                  </h3>
-                  <p class="font-body-md text-sm text-secondary">
-                    Tim datang mengangkut puing hingga bersih.
-                  </p>
-                </div>
-              </div>
-              <!-- Step 4 -->
-              <div
-                class="flex flex-row md:flex-col items-start md:items-center text-left md:text-center gap-4"
-              >
-                <div
-                  class="w-14 h-14 rounded-xl bg-surface border-2 border-primary text-primary flex items-center justify-center shrink-0 shadow-sm"
-                >
-                  <span class="material-symbols-outlined text-[28px]"
-                    >payments</span
-                  >
-                </div>
-                <div>
-                  <h3
-                    class="font-headline-sm text-lg text-on-surface mb-2 tracking-tight"
-                  >
-                    4. Pembayaran
-                  </h3>
-                  <p class="font-body-md text-sm text-secondary">
-                    Selesaikan pembayaran setelah area bersih.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Testimonials -->
-      <section class="py-section-gap bg-surface">
-        <div
-          class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto"
-        >
-          <div class="flex flex-col gap-2 mb-12 text-center items-center">
-            <span
-              class="text-primary font-label-bold tracking-widest uppercase text-sm"
-              >Testimoni</span
-            >
-            <div class="h-1 w-12 bg-primary"></div>
-            <h2
-              class="font-headline-md text-headline-md text-on-surface tracking-tight mt-4"
-            >
-              Apa Kata Klien Kami
-            </h2>
-          </div>
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div
-              class="bg-surface-container-lowest p-8 rounded-xl shadow-sm border border-border-subtle"
-            >
-              <div class="flex text-[#FFB400] mb-4">
-                <span
-                  class="material-symbols-outlined"
-                  style="font-variation-settings: &quot;FILL&quot; 1"
-                  >star</span
-                >
-                <span
-                  class="material-symbols-outlined"
-                  style="font-variation-settings: &quot;FILL&quot; 1"
-                  >star</span
-                >
-                <span
-                  class="material-symbols-outlined"
-                  style="font-variation-settings: &quot;FILL&quot; 1"
-                  >star</span
-                >
-                <span
-                  class="material-symbols-outlined"
-                  style="font-variation-settings: &quot;FILL&quot; 1"
-                  >star</span
-                >
-                <span
-                  class="material-symbols-outlined"
-                  style="font-variation-settings: &quot;FILL&quot; 1"
-                  >star</span
-                >
-              </div>
-              <p class="font-body-md text-on-surface mb-6 italic">
-                "Sangat cepat dan bersih. Puing renovasi rumah langsung beres
-                hari itu juga. Harga juga masuk akal."
-              </p>
-              <p class="font-label-bold text-secondary">— Andi, Kontraktor</p>
-            </div>
-            <div
-              class="bg-surface-container-lowest p-8 rounded-xl shadow-sm border border-border-subtle"
-            >
-              <div class="flex text-[#FFB400] mb-4">
-                <span
-                  class="material-symbols-outlined"
-                  style="font-variation-settings: &quot;FILL&quot; 1"
-                  >star</span
-                >
-                <span
-                  class="material-symbols-outlined"
-                  style="font-variation-settings: &quot;FILL&quot; 1"
-                  >star</span
-                >
-                <span
-                  class="material-symbols-outlined"
-                  style="font-variation-settings: &quot;FILL&quot; 1"
-                  >star</span
-                >
-                <span
-                  class="material-symbols-outlined"
-                  style="font-variation-settings: &quot;FILL&quot; 1"
-                  >star</span
-                >
-                <span
-                  class="material-symbols-outlined"
-                  style="font-variation-settings: &quot;FILL&quot; 1"
-                  >star</span
-                >
-              </div>
-              <p class="font-body-md text-on-surface mb-6 italic">
-                "Respons adminnya juara. Tengah malam dihubungi, besok paginya
-                truk sudah standby di lokasi proyek."
-              </p>
-              <p class="font-label-bold text-secondary">
-                — Budi, Pemilik Rumah
-              </p>
-            </div>
-            <div
-              class="bg-surface-container-lowest p-8 rounded-xl shadow-sm border border-border-subtle"
-            >
-              <div class="flex text-[#FFB400] mb-4">
-                <span
-                  class="material-symbols-outlined"
-                  style="font-variation-settings: &quot;FILL&quot; 1"
-                  >star</span
-                >
-                <span
-                  class="material-symbols-outlined"
-                  style="font-variation-settings: &quot;FILL&quot; 1"
-                  >star</span
-                >
-                <span
-                  class="material-symbols-outlined"
-                  style="font-variation-settings: &quot;FILL&quot; 1"
-                  >star</span
-                >
-                <span
-                  class="material-symbols-outlined"
-                  style="font-variation-settings: &quot;FILL&quot; 1"
-                  >star</span
-                >
-                <span class="material-symbols-outlined">star_half</span>
-              </div>
-              <p class="font-body-md text-on-surface mb-6 italic">
-                "Pesan tanah merah untuk urugan taman. Kualitas tanah bagus,
-                tidak banyak sampah. Driver juga sopan."
-              </p>
-              <p class="font-label-bold text-secondary">
-                — Citra, Arsitek Lanskap
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Location -->
-      <section
-        class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto py-section-gap"
-        id="kontak"
-      >
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
-          <!-- Map Card -->
-          <div
-            class="bg-surface-container-low rounded-xl overflow-hidden border border-border-subtle shadow-md relative min-h-[400px]"
-          >
-            <div class="absolute inset-0 bg-[#e5e3df] opacity-50"></div>
-            <div
-              class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center"
-            >
-              <div
-                class="w-16 h-16 bg-primary text-on-primary rounded-xl flex items-center justify-center shadow-lg animate-bounce"
-              >
-                <span
-                  class="material-symbols-outlined text-[32px]"
-                  style="font-variation-settings: &quot;FILL&quot; 1"
-                  >location_on</span
-                >
-              </div>
-              <div
-                class="mt-2 bg-surface px-4 py-2 rounded-full shadow font-label-bold text-on-surface"
-              >
-                Pusat Depok
-              </div>
-            </div>
-          </div>
-          <!-- Area List -->
-          <div
-            class="p-8 lg:p-12 bg-surface-container-lowest rounded-xl border border-border-subtle shadow-sm flex flex-col justify-center"
-          >
-            <div class="flex flex-col gap-2 mb-4 items-start">
-              <span
-                class="text-primary font-label-bold tracking-widest uppercase text-sm"
-                >Lokasi</span
-              >
-              <div class="h-1 w-12 bg-primary"></div>
-            </div>
-            <h2
-              class="font-headline-md text-headline-md text-on-surface mb-4 tracking-tight"
-            >
-              Area Jangkauan
-            </h2>
-            <p class="font-body-md text-secondary mb-8">
-              Kami melayani seluruh wilayah Kota Depok dan beberapa area
-              perbatasan strategis dengan respon cepat.
-            </p>
-            <div class="flex flex-wrap gap-3">
-              <span
-                class="px-4 py-2 bg-surface-container rounded-lg font-label-bold text-on-surface text-sm border border-border-subtle hover:bg-primary-container hover:text-on-primary-container hover:border-primary transition-colors cursor-default"
-                >Margonda</span
-              >
-              <span
-                class="px-4 py-2 bg-surface-container rounded-lg font-label-bold text-on-surface text-sm border border-border-subtle hover:bg-primary-container hover:text-on-primary-container hover:border-primary transition-colors cursor-default"
-                >Beji</span
-              >
-              <span
-                class="px-4 py-2 bg-surface-container rounded-lg font-label-bold text-on-surface text-sm border border-border-subtle hover:bg-primary-container hover:text-on-primary-container hover:border-primary transition-colors cursor-default"
-                >Pancoran Mas</span
-              >
-              <span
-                class="px-4 py-2 bg-surface-container rounded-lg font-label-bold text-on-surface text-sm border border-border-subtle hover:bg-primary-container hover:text-on-primary-container hover:border-primary transition-colors cursor-default"
-                >Sukmajaya</span
-              >
-              <span
-                class="px-4 py-2 bg-surface-container rounded-lg font-label-bold text-on-surface text-sm border border-border-subtle hover:bg-primary-container hover:text-on-primary-container hover:border-primary transition-colors cursor-default"
-                >Cilodong</span
-              >
-              <span
-                class="px-4 py-2 bg-surface-container rounded-lg font-label-bold text-on-surface text-sm border border-border-subtle hover:bg-primary-container hover:text-on-primary-container hover:border-primary transition-colors cursor-default"
-                >Tapos</span
-              >
-              <span
-                class="px-4 py-2 bg-surface-container rounded-lg font-label-bold text-on-surface text-sm border border-border-subtle hover:bg-primary-container hover:text-on-primary-container hover:border-primary transition-colors cursor-default"
-                >Cimanggis</span
-              >
-              <span
-                class="px-4 py-2 bg-surface-container rounded-lg font-label-bold text-on-surface text-sm border border-border-subtle hover:bg-primary-container hover:text-on-primary-container hover:border-primary transition-colors cursor-default"
-                >Sawangan</span
-              >
-              <span
-                class="px-4 py-2 bg-surface-container rounded-lg font-label-bold text-on-surface text-sm border border-border-subtle hover:bg-primary-container hover:text-on-primary-container hover:border-primary transition-colors cursor-default"
-                >Bojongsari</span
-              >
-              <span
-                class="px-4 py-2 bg-surface-container rounded-lg font-label-bold text-on-surface text-sm border border-border-subtle hover:bg-primary-container hover:text-on-primary-container hover:border-primary transition-colors cursor-default"
-                >Cinere</span
-              >
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- FAQ -->
-      <section
-        class="py-section-gap bg-surface-container-low border-y border-border-subtle"
-      >
-        <div class="px-margin-mobile md:px-margin-desktop max-w-3xl mx-auto">
-          <div class="flex flex-col gap-2 mb-10 text-center items-center">
-            <span
-              class="text-primary font-label-bold tracking-widest uppercase text-sm"
-              >Bantuan</span
-            >
-            <div class="h-1 w-12 bg-primary"></div>
-            <h2
-              class="font-headline-md text-headline-md text-on-surface tracking-tight mt-4"
-            >
-              Tanya Jawab
-            </h2>
-          </div>
-          <div class="flex flex-col gap-4">
-            <details
-              class="group bg-surface-container-lowest rounded-lg border border-border-subtle p-6 open:shadow-md transition-shadow"
-            >
-              <summary
-                class="flex justify-between items-center font-headline-sm text-xl cursor-pointer list-none text-on-surface font-bold"
-              >
-                Apakah harga sudah termasuk tenaga angkut?
-                <span
-                  class="material-symbols-outlined transition-transform group-open:rotate-180 text-primary"
-                  >expand_more</span
-                >
-              </summary>
-              <p class="font-body-md text-secondary mt-4">
-                Ya, harga yang kami berikan sudah *all-in* termasuk biaya armada
-                dan tenaga kuli angkut untuk menaikkan puing ke truk.
-              </p>
-            </details>
-            <details
-              class="group bg-surface-container-lowest rounded-lg border border-border-subtle p-6 open:shadow-md transition-shadow"
-            >
-              <summary
-                class="flex justify-between items-center font-headline-sm text-xl cursor-pointer list-none text-on-surface font-bold"
-              >
-                Berapa lama waktu tunggu armada datang?
-                <span
-                  class="material-symbols-outlined transition-transform group-open:rotate-180 text-primary"
-                  >expand_more</span
-                >
-              </summary>
-              <p class="font-body-md text-secondary mt-4">
-                Untuk area Depok, jika armada *ready*, kami bisa sampai lokasi
-                dalam 1-2 jam. Namun disarankan *booking* H-1 untuk kepastian
-                jadwal.
-              </p>
-            </details>
-            <details
-              class="group bg-surface-container-lowest rounded-lg border border-border-subtle p-6 open:shadow-md transition-shadow"
-            >
-              <summary
-                class="flex justify-between items-center font-headline-sm text-xl cursor-pointer list-none text-on-surface font-bold"
-              >
-                Apakah bisa melayani pembuangan sampah rumah tangga?
-                <span
-                  class="material-symbols-outlined transition-transform group-open:rotate-180 text-primary"
-                  >expand_more</span
-                >
-              </summary>
-              <p class="font-body-md text-secondary mt-4">
-                Fokus utama kami adalah puing bangunan, tanah, dan sisa
-                renovasi. Kami tidak menerima limbah medis atau sampah organik
-                rumah tangga skala kecil.
-              </p>
-            </details>
-            <details
-              class="group bg-surface-container-lowest rounded-lg border border-border-subtle p-6 open:shadow-md transition-shadow"
-            >
-              <summary
-                class="flex justify-between items-center font-headline-sm text-xl cursor-pointer list-none text-on-surface font-bold"
-              >
-                Metode pembayaran apa saja yang diterima?
-                <span
-                  class="material-symbols-outlined transition-transform group-open:rotate-180 text-primary"
-                  >expand_more</span
-                >
-              </summary>
-              <p class="font-body-md text-secondary mt-4">
-                Kami menerima pembayaran tunai di lokasi setelah pekerjaan
-                selesai, atau transfer bank ke rekening perusahaan kami.
-              </p>
-            </details>
-          </div>
-        </div>
-      </section>
-      <!-- Final CTA Band -->
-      <section
-        class="bg-inverse-surface text-inverse-on-surface py-32 relative overflow-hidden"
-      >
-        <div class="absolute inset-0 bg-primary/20 mix-blend-overlay"></div>
-        <div
-          class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto flex flex-col md:flex-row items-center justify-between gap-10 text-center md:text-left relative z-10"
-        >
-          <div class="max-w-xl">
-            <h2
-              class="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg mb-4 tracking-tighter"
-            >
-              Proyek Bebas Puing Hari Ini.
-            </h2>
-            <p class="font-body-lg text-body-lg text-surface-dim">
-              Hubungi kami sekarang untuk konsultasi dan estimasi biaya gratis.
-              Tim kami siap meluncur ke lokasi Anda.
-            </p>
-          </div>
-          <div class="flex flex-col sm:flex-row gap-6 w-full md:w-auto">
-            <a
-              aria-label="Telepon"
-              class="flex items-center justify-center gap-3 bg-surface text-on-surface px-8 py-5 rounded-full font-label-bold text-lg hover:bg-surface-container transition-colors shadow-xl"
-              href="tel:+6281234567890"
-            >
-              <span class="material-symbols-outlined text-[24px]">call</span>
-              Hubungi via Telepon
-            </a>
-            <a
-              aria-label="WhatsApp"
-              class="flex items-center justify-center gap-3 bg-whatsapp-green text-white px-8 py-5 rounded-full font-label-bold text-lg hover:bg-whatsapp-green/90 transition-colors shadow-xl"
-              href="https://wa.me/6281234567890"
-            >
-              <svg
-                class="w-6 h-6 fill-current"
-                viewbox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Manrope:wght@400;500;600;700&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="style.css" />
+    <!-- Local business structured data -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MovingCompany",
+  "name": "Buang Puing Depok",
+  "url": "https://buangpuingdepok.id",
+  "areaServed": "Depok, Jawa Barat",
+  "description": "Jasa angkut puing bangunan, bongkar rumah, urug tanah, dan sewa dump truck di Depok dan sekitarnya."
+}
+</script>
+</head>
+
+<body>
+
+    <!-- Reusable icon sprite -->
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+        <defs>
+            <symbol id="i-truck" viewBox="0 0 24 24">
+                <path d="M2 6h11v9H2z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" />
+                <path d="M13 10h4l4 3.2V15h-8z" fill="none" stroke="currentColor" stroke-width="1.6"
+                    stroke-linejoin="round" />
+                <circle cx="6.5" cy="17" r="1.8" fill="none" stroke="currentColor" stroke-width="1.6" />
+                <circle cx="17" cy="17" r="1.8" fill="none" stroke="currentColor" stroke-width="1.6" />
+            </symbol>
+            <symbol id="i-clock" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.6" />
+                <path d="M12 7.5V12l3.2 2" fill="none" stroke="currentColor" stroke-width="1.6"
+                    stroke-linecap="round" />
+            </symbol>
+            <symbol id="i-tag" viewBox="0 0 24 24">
+                <path d="M11 3h6a2 2 0 012 2v6L10 20l-8-8L11 3z" fill="none" stroke="currentColor" stroke-width="1.6"
+                    stroke-linejoin="round" />
+                <circle cx="15" cy="7" r="1.3" fill="currentColor" />
+            </symbol>
+            <symbol id="i-shield" viewBox="0 0 24 24">
+                <path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z" fill="none" stroke="currentColor"
+                    stroke-width="1.6" stroke-linejoin="round" />
+                <path d="M8.5 12l2.3 2.3L15.5 9.5" fill="none" stroke="currentColor" stroke-width="1.6"
+                    stroke-linecap="round" stroke-linejoin="round" />
+            </symbol>
+            <symbol id="i-pin" viewBox="0 0 24 24">
+                <path d="M12 21s7-6.5 7-11.5A7 7 0 105 9.5C5 14.5 12 21 12 21z" fill="none" stroke="currentColor"
+                    stroke-width="1.6" stroke-linejoin="round" />
+                <circle cx="12" cy="9.5" r="2.3" fill="none" stroke="currentColor" stroke-width="1.6" />
+            </symbol>
+            <symbol id="i-users" viewBox="0 0 24 24">
+                <circle cx="9" cy="8" r="2.6" fill="none" stroke="currentColor" stroke-width="1.6" />
+                <path d="M3.5 19c.6-3 2.7-4.6 5.5-4.6s4.9 1.6 5.5 4.6" fill="none" stroke="currentColor"
+                    stroke-width="1.6" stroke-linecap="round" />
+                <circle cx="16.5" cy="8.5" r="2.1" fill="none" stroke="currentColor" stroke-width="1.4" />
+                <path d="M15.5 14.6c2.2.2 3.8 1.6 4.3 4" fill="none" stroke="currentColor" stroke-width="1.4"
+                    stroke-linecap="round" />
+            </symbol>
+            <symbol id="i-route" viewBox="0 0 24 24">
+                <circle cx="5" cy="6" r="2" fill="none" stroke="currentColor" stroke-width="1.6" />
+                <circle cx="19" cy="18" r="2" fill="none" stroke="currentColor" stroke-width="1.6" />
+                <path d="M5 8c0 4 3 3 3 6.5S11 18 11 18" fill="none" stroke="currentColor" stroke-width="1.6"
+                    stroke-linecap="round" />
+                <path d="M13 18h4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+            </symbol>
+            <symbol id="i-hammer" viewBox="0 0 24 24">
+                <path d="M14.5 3.5l6 6-2.2 2.2-6-6z" fill="none" stroke="currentColor" stroke-width="1.6"
+                    stroke-linejoin="round" />
+                <path d="M13.5 8.5L4 18l-1 3 3-1 9.5-9.5" fill="none" stroke="currentColor" stroke-width="1.6"
+                    stroke-linejoin="round" />
+            </symbol>
+            <symbol id="i-layers" viewBox="0 0 24 24">
+                <path d="M12 3l9 5-9 5-9-5 9-5z" fill="none" stroke="currentColor" stroke-width="1.6"
+                    stroke-linejoin="round" />
+                <path d="M3 12.5l9 5 9-5" fill="none" stroke="currentColor" stroke-width="1.6"
+                    stroke-linejoin="round" />
+                <path d="M3 16.5l9 5 9-5" fill="none" stroke="currentColor" stroke-width="1.6"
+                    stroke-linejoin="round" />
+            </symbol>
+            <symbol id="i-pickup" viewBox="0 0 24 24">
+                <path d="M2 12V8h8l3 4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" />
+                <path d="M13 12h6l3 3v2H2v-3z" fill="none" stroke="currentColor" stroke-width="1.6"
+                    stroke-linejoin="round" />
+                <circle cx="6.5" cy="17" r="1.8" fill="none" stroke="currentColor" stroke-width="1.6" />
+                <circle cx="17.5" cy="17" r="1.8" fill="none" stroke="currentColor" stroke-width="1.6" />
+            </symbol>
+            <symbol id="i-shovel" viewBox="0 0 24 24">
+                <path d="M17 3l4 4-9 9-4-4z" fill="none" stroke="currentColor" stroke-width="1.6"
+                    stroke-linejoin="round" />
+                <path d="M8 12l-4.5 4.5c-.8.8-.8 2 0 2.8s2 .8 2.8 0L11 14.5" fill="none" stroke="currentColor"
+                    stroke-width="1.6" stroke-linejoin="round" />
+            </symbol>
+            <symbol id="i-broom" viewBox="0 0 24 24">
+                <path d="M14 3l5 5-8 8-5-2z" fill="none" stroke="currentColor" stroke-width="1.6"
+                    stroke-linejoin="round" />
+                <path d="M9.5 13.5L3 20M3 16l4 4M5 20l3-3" fill="none" stroke="currentColor" stroke-width="1.6"
+                    stroke-linecap="round" />
+            </symbol>
+            <symbol id="i-whatsapp" viewBox="0 0 24 24">
                 <path
-                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"
-                ></path>
-              </svg>
-              Hubungi via WhatsApp
+                    d="M17.5 14.4c-.3-.1-1.7-.9-2-1-.3-.1-.5-.1-.6.1-.2.3-.7.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.1.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.1-.6-1.6-.9-2.2-.2-.6-.5-.5-.6-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3z"
+                    fill="currentColor" />
+                <path d="M12 2a10 10 0 00-8.5 15.2L2 22l4.9-1.3A10 10 0 1012 2z" fill="none" stroke="currentColor"
+                    stroke-width="1.5" />
+            </symbol>
+            <symbol id="i-instagram" viewBox="0 0 24 24">
+                <rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.6" />
+                <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.6" />
+                <circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" />
+            </symbol>
+            <symbol id="i-tiktok" viewBox="0 0 24 24">
+                <path d="M14 3v10.8a3.2 3.2 0 11-2.6-3.14" fill="none" stroke="currentColor" stroke-width="1.6"
+                    stroke-linecap="round" />
+                <path d="M14 3c.4 2.6 2 4.2 4.5 4.5" fill="none" stroke="currentColor" stroke-width="1.6"
+                    stroke-linecap="round" />
+            </symbol>
+            <symbol id="i-phone" viewBox="0 0 24 24">
+                <path
+                    d="M6 3.5h3l1.3 4-2 1.5a11 11 0 005.7 5.7l1.5-2 4 1.3v3a1.5 1.5 0 01-1.6 1.5A15.5 15.5 0 014.5 5.1 1.5 1.5 0 016 3.5z"
+                    fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" />
+            </symbol>
+            <symbol id="i-arrow" viewBox="0 0 24 24">
+                <path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8"
+                    stroke-linecap="round" stroke-linejoin="round" />
+            </symbol>
+            <symbol id="i-menu" viewBox="0 0 24 24">
+                <path d="M4 6h16M4 12h16M4 18h16" fill="none" stroke="currentColor" stroke-width="1.8"
+                    stroke-linecap="round" />
+            </symbol>
+            <symbol id="i-close" viewBox="0 0 24 24">
+                <path d="M5 5l14 14M19 5L5 19" fill="none" stroke="currentColor" stroke-width="1.8"
+                    stroke-linecap="round" />
+            </symbol>
+            <symbol id="i-check" viewBox="0 0 24 24">
+                <path d="M4 12l5 5L20 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </symbol>
+            <symbol id="i-drag" viewBox="0 0 24 24">
+                <path d="M8 6L3 12l5 6M16 6l5 6-5 6" fill="none" stroke="currentColor" stroke-width="1.8"
+                    stroke-linecap="round" stroke-linejoin="round" />
+            </symbol>
+        </defs>
+    </svg>
+
+    <!-- ============ NAVBAR ============ -->
+    <header class="nav" id="nav">
+        <div class="nav__inner">
+            <a href="#" class="nav__brand">
+                <img src="images/icons/icon-text.png" alt="Buang Puing Depok" class="nav__brand-icon" />
             </a>
-          </div>
+            <nav class="nav__links" id="navLinks">
+                <a href="#keuntungan">Keuntungan</a>
+                <a href="#tentang">Tentang</a>
+                <a href="#layanan">Layanan</a>
+                <a href="#sebelum-sesudah">Hasil Kerja</a>
+                <a href="#cara-kerja">Cara Kerja</a>
+                <a href="#area">Kontak</a>
+            </nav>
+            <a class="btn btn--primary btn--sm nav__cta"
+                href="https://wa.me/628813877153?text=Halo%2C%20saya%20mau%20tanya%20soal%20jasa%20angkut%20puing"
+                target="_blank" rel="noopener">
+                <svg class="icon">
+                    <use href="#i-whatsapp" />
+                </svg> Chat WhatsApp
+            </a>
+            <button class="nav__toggle" id="navToggle" aria-label="Buka menu" aria-expanded="false"
+                aria-controls="navLinks">
+                <img src="images/icons/icon-orange.png" alt="Menu" class="icon" />
+            </button>
         </div>
-      </section>
+    </header>
+
+    <main>
+
+        <!-- ============ HERO ============ -->
+        <section class="hero">
+            <div class="hero__bg" aria-hidden="true"></div>
+            <div class="wrap hero__inner">
+                <div class="hero__content reveal">
+                    <p class="eyebrow">Layanan Angkut Puing · Depok &amp; Sekitarnya</p>
+                    <h1 class="hero__title">Puing Numpuk?<br>Serahkan, Kami Beresin.</h1>
+                    <p class="hero__lede">Dari sisa bongkaran, renovasi, sampai tanah galian — tim kami jemput langsung
+                        ke lokasi dan pastikan bersih total. Harga jelas dari awal, tanpa drama nego di tempat.</p>
+                    <div class="hero__actions">
+                        <a class="btn btn--primary btn--lg"
+                            href="https://wa.me/628813877153?text=Halo%2C%20saya%20mau%20tanya%20soal%20jasa%20angkut%20puing"
+                            target="_blank" rel="noopener">
+                            <svg class="icon">
+                                <use href="#i-whatsapp" />
+                            </svg> Chat via WhatsApp
+                        </a>
+                        <a class="btn btn--ghost btn--lg" href="#layanan">Lihat Layanan</a>
+                    </div>
+                </div>
+                <div class="hero__art reveal" aria-hidden="true">
+                    <div class="hero__image-wrapper">
+                        <img src="images/layanan/5.jpeg" alt="Jasa angkut puing Depok" class="hero__image" />
+                        <div class="hero__image-decoration"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ KEUNTUNGAN ============ -->
+        <section class="section" id="keuntungan">
+            <div class="wrap">
+                <header class="section__head reveal">
+                    <p class="eyebrow">Kenapa Banyak yang Pilih Kami</p>
+                    <h2>Bukan Cuma Angkut, Tapi Bikin Tenang</h2>
+                </header>
+                <div class="grid grid--3">
+                    <div class="card card--flat reveal">
+                        <span class="card__icon"><svg class="icon">
+                                <use href="#i-clock" />
+                            </svg></span>
+                        <h3>Respon Kilat</h3>
+                        <p>Chat sekarang, tim survei bisa meluncur hari ini juga kalau armada sedang standby.</p>
+                    </div>
+                    <div class="card card--flat reveal">
+                        <span class="card__icon"><svg class="icon">
+                                <use href="#i-tag" />
+                            </svg></span>
+                        <h3>Harga di Depan</h3>
+                        <p>Estimasi biaya kami kasih sebelum kerja mulai. Tidak ada tambahan biaya dadakan.</p>
+                    </div>
+                    <div class="card card--flat reveal">
+                        <span class="card__icon"><svg class="icon">
+                                <use href="#i-truck" />
+                            </svg></span>
+                        <h3>Armada Lengkap</h3>
+                        <p>Dari pickup kecil buat pindahan ringan, sampai dump truck besar buat proyek gede.</p>
+                    </div>
+                    <div class="card card--flat reveal">
+                        <span class="card__icon"><svg class="icon">
+                                <use href="#i-users" />
+                            </svg></span>
+                        <h3>Tenaga Berpengalaman</h3>
+                        <p>Tim lapangan terbiasa kerja rapi, hati-hati, dan paham aturan buang puing yang benar.</p>
+                    </div>
+                    <div class="card card--flat reveal">
+                        <span class="card__icon"><svg class="icon">
+                                <use href="#i-route" />
+                            </svg></span>
+                        <h3>Jangkauan Luas</h3>
+                        <p>Melayani seluruh Depok dan wilayah perbatasan — Cinere, Sawangan, sampai Cimanggis.</p>
+                    </div>
+                    <div class="card card--flat reveal">
+                        <span class="card__icon"><svg class="icon">
+                                <use href="#i-shield" />
+                            </svg></span>
+                        <h3>Garansi Bersih Tuntas</h3>
+                        <p>Kami tidak pergi sebelum lokasi benar-benar bersih, bukan cuma "kelihatan kosong".</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ TENTANG KAMI ============ -->
+        <section class="section section--alt" id="tentang">
+            <div class="wrap about">
+                <div class="about__art reveal" aria-hidden="true">
+                    <img src="images/layanan/4.jpeg" alt="Tim Buang Puing Depok" class="about__image" />
+                </div>
+                <div class="about__content reveal">
+                    <p class="eyebrow">Cerita Kami</p>
+                    <h2>Dari Depok, Untuk Depok</h2>
+                    <p>Buang Puing Depok mulai dari kebutuhan sederhana: banyak warga yang bingung mau kemanakan sisa
+                        bongkaran rumah atau proyek renovasi. Sejak itu kami fokus di satu hal — angkut puing dan tanah
+                        dengan cepat, jujur soal harga, dan beresin sampai tuntas.</p>
+                    <p>Sudah 10 tahun lebih kami keliling Depok, dan sebagian besar pelanggan datang dari rekomendasi
+                        tetangga atau kontraktor langganan.</p>
+                    <div class="about__stats">
+                        <div><strong>10+</strong><span>Tahun Beroperasi</span></div>
+                        <div><strong>1.500+</strong><span>Proyek Selesai</span></div>
+                        <div><strong>100%</strong><span>Warga Depok Asli</span></div>
+                    </div>
+                    <a class="btn btn--primary" href="https://wa.me/628813877153" target="_blank" rel="noopener">
+                        <svg class="icon">
+                            <use href="#i-whatsapp" />
+                        </svg> Ngobrol via WhatsApp
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ LAYANAN ============ -->
+        <section class="section section--dark" id="layanan">
+            <div class="wrap">
+                <header class="section__head reveal">
+                    <p class="eyebrow eyebrow--light">Layanan Kami</p>
+                    <h2 class="text--light">Satu Tim, Segala Kebutuhan Bersih-Bersih Proyek</h2>
+                </header>
+                <div class="grid grid--3">
+                    <article class="card card--service reveal">
+                        <span class="card__icon card__icon--onPrimary"><svg class="icon">
+                                <use href="#i-truck" />
+                            </svg></span>
+                        <h3>Buang Puing Bangunan</h3>
+                        <p>Sisa bata, cor, keramik, sampai material bongkaran lain — kami angkut pakai armada tertutup.
+                        </p>
+                        <a class="card__link"
+                            href="https://wa.me/628813877153?text=Halo%2C%20saya%20mau%20pesan%20jasa%20Buang%20Puing%20Bangunan">Pesan
+                            via WhatsApp <svg class="icon">
+                                <use href="#i-arrow" />
+                            </svg></a>
+                    </article>
+                    <article class="card card--service reveal">
+                        <span class="card__icon card__icon--onPrimary"><svg class="icon">
+                                <use href="#i-hammer" />
+                            </svg></span>
+                        <h3>Bongkar Rumah &amp; Bangunan</h3>
+                        <p>Pembongkaran rapi pakai alat berat atau manual, sisa puingnya langsung kami bawa pergi.</p>
+                        <a class="card__link"
+                            href="https://wa.me/628813877153?text=Halo%2C%20saya%20mau%20pesan%20jasa%20Bongkar%20Rumah">Pesan
+                            via WhatsApp <svg class="icon">
+                                <use href="#i-arrow" />
+                            </svg></a>
+                    </article>
+                    <article class="card card--service reveal">
+                        <span class="card__icon card__icon--onPrimary"><svg class="icon">
+                                <use href="#i-layers" />
+                            </svg></span>
+                        <h3>Urug &amp; Ratakan Tanah</h3>
+                        <p>Suplai tanah merah berkualitas untuk peninggian lahan atau perataan sebelum bangun.</p>
+                        <a class="card__link"
+                            href="https://wa.me/628813877153?text=Halo%2C%20saya%20mau%20pesan%20jasa%20Urug%20Tanah">Pesan
+                            via WhatsApp <svg class="icon">
+                                <use href="#i-arrow" />
+                            </svg></a>
+                    </article>
+                    <article class="card card--service reveal">
+                        <span class="card__icon card__icon--onPrimary"><svg class="icon">
+                                <use href="#i-pickup" />
+                            </svg></span>
+                        <h3>Sewa Pickup &amp; Dump Truck</h3>
+                        <p>Butuh armada buat pindahan atau angkut material sendiri? Bisa harian atau per-rit.</p>
+                        <a class="card__link"
+                            href="https://wa.me/628813877153?text=Halo%2C%20saya%20mau%20sewa%20Pickup%2FDump%20Truck">Pesan
+                            via WhatsApp <svg class="icon">
+                                <use href="#i-arrow" />
+                            </svg></a>
+                    </article>
+                    <article class="card card--service reveal">
+                        <span class="card__icon card__icon--onPrimary"><svg class="icon">
+                                <use href="#i-shovel" />
+                            </svg></span>
+                        <h3>Penggalian Tanah</h3>
+                        <p>Gali pondasi, kolam, atau saluran air — dikerjakan secara manual maupun pakai alat berat.</p>
+                        <a class="card__link"
+                            href="https://wa.me/628813877153?text=Halo%2C%20saya%20mau%20pesan%20jasa%20Penggalian%20Tanah">Pesan
+                            via WhatsApp <svg class="icon">
+                                <use href="#i-arrow" />
+                            </svg></a>
+                    </article>
+                    <article class="card card--service reveal">
+                        <span class="card__icon card__icon--onPrimary"><svg class="icon">
+                                <use href="#i-broom" />
+                            </svg></span>
+                        <h3>Bersihkan Lahan Kosong</h3>
+                        <p>Land clearing sebelum proyek mulai, termasuk angkut sampah dan semak yang menumpuk.</p>
+                        <a class="card__link"
+                            href="https://wa.me/628813877153?text=Halo%2C%20saya%20mau%20pesan%20jasa%20Bersihkan%20Lahan">Pesan
+                            via WhatsApp <svg class="icon">
+                                <use href="#i-arrow" />
+                            </svg></a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ SEBELUM & SESUDAH ============ -->
+        <section class="section" id="sebelum-sesudah">
+            <div class="wrap">
+                <header class="section__head reveal">
+                    <p class="eyebrow">Bukti Nyata</p>
+                    <h2>Geser, Lihat Sendiri Bedanya</h2>
+                    <p class="section__sub">Ini bukan sulap — cuma hasil kerja tim yang rapi dan tuntas. Geser slider di
+                        bawah untuk lihat before-after dari salah satu lokasi proyek kami.</p>
+                </header>
+
+                <div class="compare reveal" id="compareSlider">
+                    <div class="compare__scene compare__scene--after" aria-hidden="true">
+                        <img src="images/hasil-kerja/after.jpeg" alt="Sesudah - lokasi bersih" class="compare__image" />
+                        <span class="compare__tag compare__tag--after">Sesudah</span>
+                    </div>
+                    <div class="compare__scene compare__scene--before" aria-hidden="true">
+                        <img src="images/hasil-kerja/before.jpeg" alt="Sebelum - lokasi berpuing"
+                            class="compare__image" />
+                        <span class="compare__tag compare__tag--before">Sebelum</span>
+                    </div>
+                    <div class="compare__handle" id="compareHandle" role="slider"
+                        aria-label="Geser untuk bandingkan sebelum dan sesudah" aria-valuemin="0" aria-valuemax="100"
+                        aria-valuenow="50" tabindex="0">
+                        <span class="compare__handle-icon"><svg class="icon">
+                                <use href="#i-drag" />
+                            </svg></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ CARA KERJA ============ -->
+        <section class="section section--alt" id="cara-kerja">
+            <div class="wrap">
+                <header class="section__head reveal">
+                    <p class="eyebrow">Cara Pakai Layanan Kami</p>
+                    <h2>Gampang, Cuma 4 Langkah</h2>
+                </header>
+                <div class="steps">
+                    <div class="steps__item reveal">
+                        <span class="steps__num">01</span>
+                        <h3>Chat via WhatsApp</h3>
+                        <p>Kirim lokasi dan jenis puing atau layanan yang kamu butuhkan.</p>
+                    </div>
+                    <div class="steps__item reveal">
+                        <span class="steps__num">02</span>
+                        <h3>Dapat Estimasi</h3>
+                        <p>Kami kasih perkiraan biaya dan jadwal pengerjaan secara jelas.</p>
+                    </div>
+                    <div class="steps__item reveal">
+                        <span class="steps__num">03</span>
+                        <h3>Tim Meluncur</h3>
+                        <p>Armada datang sesuai waktu yang sudah disepakati bersama.</p>
+                    </div>
+                    <div class="steps__item reveal">
+                        <span class="steps__num">04</span>
+                        <h3>Lokasi Bersih, Beres</h3>
+                        <p>Pembayaran dilakukan setelah lokasi benar-benar bersih tuntas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ CTA BAND ============ -->
+        <section class="cta">
+            <div class="wrap cta__inner reveal">
+                <h2>Yuk, Bikin Proyek Kamu<br>Bebas Puing.</h2>
+                <p>Chat sekarang, biar tim kami yang mikirin sisanya.</p>
+                <div class="cta__actions">
+                    <a class="btn btn--whatsapp btn--lg"
+                        href="https://wa.me/628813877153?text=Halo%2C%20saya%20mau%20tanya%20soal%20jasa%20angkut%20puing"
+                        target="_blank" rel="noopener">
+                        <svg class="icon">
+                            <use href="#i-whatsapp" />
+                        </svg> Chat WhatsApp
+                    </a>
+                </div>
+                <div class="cta__social">
+                    <span>Lihat keseharian tim kami:</span>
+                    <a href="https://www.instagram.com/sahrul48486" target="_blank" rel="noopener"
+                        aria-label="Instagram Buang Puing Depok"><svg class="icon">
+                            <use href="#i-instagram" />
+                        </svg> Instagram</a>
+                    <a href="https://www.tiktok.com/@gugunn210?_r=1&_t=ZS-98KYXrbNVDs" target="_blank" rel="noopener"
+                        aria-label="TikTok Buang Puing Depok"><svg class="icon">
+                            <use href="#i-tiktok" />
+                        </svg> TikTok</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ MAPS + AREA ============ -->
+        <section class="section" id="area">
+            <div class="wrap area">
+                <div class="area__map reveal">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2742.256578783216!2d106.74367019999998!3d-6.385223199999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69e994b7509169%3A0x63f2f96e3fab1c2c!2sJasa%20buang%20puing%20Depok!5e1!3m2!1sid!2sid!4v1785082225855!5m2!1sid!2sid"
+                        width="600" height="450" style="border:0; width:100%; height:100%;" allowfullscreen=""
+                        loading="lazy" referrerpolicy="strict-origin-when-cross-origin">
+                    </iframe>
+                </div>
+                <div class="area__info reveal">
+                    <p class="eyebrow">Area Layanan</p>
+                    <h2>Kami Standby di Seluruh Depok</h2>
+                    <p>Melayani seluruh wilayah Kota Depok dan beberapa area perbatasan terdekat dengan respon cepat.
+                    </p>
+                    <div class="chips">
+                        <span>Margonda</span><span>Beji</span><span>Pancoran Mas</span>
+                        <span>Sukmajaya</span><span>Cilodong</span><span>Tapos</span>
+                        <span>Cimanggis</span><span>Sawangan</span><span>Cinere</span>
+                        <span>Bojongsari</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
-    <!-- Footer -->
-    <footer
-      class="bg-surface-container-highest border-t border-border-subtle pt-16 pb-8"
-    >
-      <div
-        class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto"
-      >
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
-          <div class="md:col-span-2">
-            <span
-              class="font-headline-sm text-2xl text-on-surface tracking-tighter block mb-4 font-bold"
-              >Buang Puing Depok</span
-            >
-            <p class="font-body-md text-secondary max-w-md">
-              Solusi terpercaya untuk manajemen puing, penyewaan armada, dan
-              penyiapan lahan di wilayah Depok. Profesional, cepat, dan ramah
-              lingkungan.
-            </p>
-          </div>
-          <div>
-            <h4 class="font-label-bold text-on-surface mb-4">Tautan Cepat</h4>
-            <ul class="flex flex-col gap-3 font-body-md text-secondary">
-              <li>
-                <a class="hover:text-primary transition-colors" href="#layanan"
-                  >Layanan Kami</a
-                >
-              </li>
-              <li>
-                <a class="hover:text-primary transition-colors" href="#galeri"
-                  >Galeri Proyek</a
-                >
-              </li>
-              <li>
-                <a class="hover:text-primary transition-colors" href="#tentang"
-                  >Tentang Kami</a
-                >
-              </li>
-              <li>
-                <a class="hover:text-primary transition-colors" href="#kontak"
-                  >Kontak &amp; Lokasi</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h4 class="font-label-bold text-on-surface mb-4">Layanan Utama</h4>
-            <ul class="flex flex-col gap-3 font-body-md text-secondary">
-              <li>
-                <a class="hover:text-primary transition-colors" href="#"
-                  >Buang Puing</a
-                >
-              </li>
-              <li>
-                <a class="hover:text-primary transition-colors" href="#"
-                  >Sewa Truk</a
-                >
-              </li>
-              <li>
-                <a class="hover:text-primary transition-colors" href="#"
-                  >Urugan Tanah</a
-                >
-              </li>
-              <li>
-                <a class="hover:text-primary transition-colors" href="#"
-                  >Bongkaran</a
-                >
-              </li>
-            </ul>
-          </div>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer">
+        <div class="wrap footer__grid">
+            <div class="footer__brand">
+                <a href="#" class="nav__brand nav__brand--footer">
+                    <img src="images/icons/icon-text.png" alt="Buang Puing Depok"
+                        class="nav__brand-icon nav__brand-icon--footer" />
+                </a>
+                <p>Solusi angkut puing, bongkar bangunan, dan urug tanah terpercaya di Depok dan sekitarnya. Cepat,
+                    jujur soal harga, dan beres tuntas.</p>
+                <div class="footer__social">
+                    <a href="https://wa.me/628813877153" target="_blank" rel="noopener" aria-label="WhatsApp"><svg
+                            class="icon">
+                            <use href="#i-whatsapp" />
+                        </svg></a>
+                    <a href="https://www.instagram.com/sahrul48486" target="_blank" rel="noopener"
+                        aria-label="Instagram"><svg class="icon">
+                            <use href="#i-instagram" />
+                        </svg></a>
+                    <a href="https://www.tiktok.com/@gugunn210?_r=1&_t=ZS-98KYXrbNVDs" target="_blank" rel="noopener"
+                        aria-label="TikTok"><svg class="icon">
+                            <use href="#i-tiktok" />
+                        </svg></a>
+                </div>
+            </div>
+            <div class="footer__col">
+                <h4>Jelajahi</h4>
+                <a href="#keuntungan">Keuntungan</a>
+                <a href="#tentang">Tentang Kami</a>
+                <a href="#layanan">Layanan</a>
+                <a href="#sebelum-sesudah">Hasil Kerja</a>
+                <a href="#area">Area &amp; Kontak</a>
+            </div>
+            <div class="footer__col">
+                <h4>Layanan</h4>
+                <a href="#layanan">Buang Puing Bangunan</a>
+                <a href="#layanan">Bongkar Rumah</a>
+                <a href="#layanan">Urug Tanah</a>
+                <a href="#layanan">Sewa Dump Truck</a>
+            </div>
+            <div class="footer__col">
+                <h4>Kontak</h4>
+                <a href="https://wa.me/628813877153">0881-3877-153</a>
+                <span class="footer__text">Melayani seluruh Kota Depok</span>
+                <span class="footer__text">Setiap hari, 07.00–20.00 WIB</span>
+            </div>
         </div>
-        <div
-          class="border-t border-border-subtle pt-8 flex flex-col md:flex-row justify-between items-center gap-4"
-        >
-          <p class="font-label-sm text-secondary">
-            © 2024 Buang Puing Depok. Modern Waste Management.
-          </p>
-          <div
-            class="flex flex-wrap justify-center gap-6 font-label-sm text-secondary"
-          >
-            <a class="hover:text-primary transition-colors" href="#"
-              >Kebijakan Privasi</a
-            >
-            <a class="hover:text-primary transition-colors" href="#"
-              >Syarat &amp; Ketentuan</a
-            >
-            <a class="hover:text-primary transition-colors" href="#">Bantuan</a>
-          </div>
+        <div class="wrap footer__bottom">
+            <span>© 2026 Buang Puing Depok.</span>
+            <div class="footer__legal">
+                <a href="#">Kebijakan Privasi</a>
+                <a href="#">Syarat &amp; Ketentuan</a>
+            </div>
         </div>
-      </div>
     </footer>
-  </body>
+
+    <!-- Floating WhatsApp button -->
+    <a class="fab" href="https://wa.me/628813877153?text=Halo%2C%20saya%20mau%20tanya%20soal%20jasa%20angkut%20puing"
+        target="_blank" rel="noopener" aria-label="Chat WhatsApp">
+        <svg class="icon">
+            <use href="#i-whatsapp" />
+        </svg>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+
 </html>
