@@ -23,6 +23,7 @@
         rel="stylesheet" />
 
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="images/icons/icon-orange.png">
     <!-- Local business structured data -->
     <script type="application/ld+json">
 {
@@ -175,7 +176,7 @@
                 <a href="#layanan">Layanan</a>
                 <a href="#sebelum-sesudah">Hasil Kerja</a>
                 <a href="#cara-kerja">Cara Kerja</a>
-                <a href="#area">Kontak</a>
+                <a href="#cta">Kontak</a>
             </nav>
             <a class="btn btn--primary btn--sm nav__cta"
                 href="https://wa.me/628813877153?text=Halo%2C%20saya%20mau%20tanya%20soal%20jasa%20angkut%20puing"
@@ -186,7 +187,9 @@
             </a>
             <button class="nav__toggle" id="navToggle" aria-label="Buka menu" aria-expanded="false"
                 aria-controls="navLinks">
-                <img src="images/icons/icon-orange.png" alt="Menu" class="icon" />
+                <svg class="icon">
+                    <use href="#i-menu" />
+                </svg>
             </button>
         </div>
     </header>
@@ -215,7 +218,7 @@
                 </div>
                 <div class="hero__art reveal" aria-hidden="true">
                     <div class="hero__image-wrapper">
-                        <img src="images/layanan/5.jpeg" alt="Jasa angkut puing Depok" class="hero__image" />
+                        <img src="images/documentation/5.jpeg" alt="Jasa angkut puing Depok" class="hero__image" />
                         <div class="hero__image-decoration"></div>
                     </div>
                 </div>
@@ -248,8 +251,9 @@
                         <span class="card__icon"><svg class="icon">
                                 <use href="#i-truck" />
                             </svg></span>
-                        <h3>Armada Lengkap</h3>
-                        <p>Dari pickup kecil buat pindahan ringan, sampai dump truck besar buat proyek gede.</p>
+                        <h3>Armada Siap Pakai</h3>
+                        <p>Truk kami standby dan siap meluncur begitu jadwal disepakati, tanpa nunggu antrean armada.
+                        </p>
                     </div>
                     <div class="card card--flat reveal">
                         <span class="card__icon"><svg class="icon">
@@ -280,10 +284,10 @@
         <section class="section section--alt" id="tentang">
             <div class="wrap about">
                 <div class="about__art reveal" aria-hidden="true">
-                    <img src="images/layanan/4.jpeg" alt="Tim Buang Puing Depok" class="about__image" />
+                    <img src="images/documentation/4.jpeg" alt="Tim Buang Puing Depok" class="about__image" />
                 </div>
                 <div class="about__content reveal">
-                    <p class="eyebrow">Cerita Kami</p>
+                    <p class="eyebrow">Tentang Kami</p>
                     <h2>Dari Depok, Untuk Depok</h2>
                     <p>Buang Puing Depok mulai dari kebutuhan sederhana: banyak warga yang bingung mau kemanakan sisa
                         bongkaran rumah atau proyek renovasi. Sejak itu kami fokus di satu hal — angkut puing dan tanah
@@ -293,7 +297,6 @@
                     <div class="about__stats">
                         <div><strong>10+</strong><span>Tahun Beroperasi</span></div>
                         <div><strong>1.500+</strong><span>Proyek Selesai</span></div>
-                        <div><strong>100%</strong><span>Warga Depok Asli</span></div>
                     </div>
                     <a class="btn btn--primary" href="https://wa.me/628813877153" target="_blank" rel="noopener">
                         <svg class="icon">
@@ -310,77 +313,90 @@
                 <header class="section__head reveal">
                     <p class="eyebrow eyebrow--light">Layanan Kami</p>
                     <h2 class="text--light">Satu Tim, Segala Kebutuhan Bersih-Bersih Proyek</h2>
+                    <p class="section__sub text--light">Solusi lengkap untuk kebutuhan angkut puing, urug tanah,
+                        kebersihan proyek, sampai pindahan — semua dalam satu tim.</p>
                 </header>
                 <div class="grid grid--3">
                     <article class="card card--service reveal">
-                        <span class="card__icon card__icon--onPrimary"><svg class="icon">
-                                <use href="#i-truck" />
-                            </svg></span>
-                        <h3>Buang Puing Bangunan</h3>
-                        <p>Sisa bata, cor, keramik, sampai material bongkaran lain — kami angkut pakai armada tertutup.
-                        </p>
+                        <div class="card__media">
+                            <img src="images/services/angkut-puing-bangunan.jpg"
+                                alt="Truk mengangkut puing bongkaran bangunan di Depok" loading="lazy" />
+                        </div>
+                        <h3>Jasa Angkut Puing Bangunan</h3>
+                        <p>Sisa bata, beton, dan reruntuhan bongkaran diangkut tuntas pakai armada dump truck, sampai
+                            lokasi benar-benar bersih.</p>
                         <a class="card__link"
-                            href="https://wa.me/628813877153?text=Halo%2C%20saya%20mau%20pesan%20jasa%20Buang%20Puing%20Bangunan">Pesan
+                            href="https://wa.me/628813877153?text=Halo%2C%20saya%20mau%20pesan%20jasa%20Angkut%20Puing%20Bangunan">Pesan
                             via WhatsApp <svg class="icon">
                                 <use href="#i-arrow" />
                             </svg></a>
                     </article>
                     <article class="card card--service reveal">
-                        <span class="card__icon card__icon--onPrimary"><svg class="icon">
-                                <use href="#i-hammer" />
-                            </svg></span>
-                        <h3>Bongkar Rumah &amp; Bangunan</h3>
-                        <p>Pembongkaran rapi pakai alat berat atau manual, sisa puingnya langsung kami bawa pergi.</p>
+                        <div class="card__media">
+                            <img src="images/services/urug-suplai-tanah.jpg"
+                                alt="Suplai tanah merah untuk urugan proyek di Depok" loading="lazy" />
+                        </div>
+                        <h3>Jasa Urug &amp; Suplai Tanah</h3>
+                        <p>Tanah merah berkualitas untuk peninggian lahan atau perataan, diantar dan dituang langsung di
+                            lokasi.</p>
                         <a class="card__link"
-                            href="https://wa.me/628813877153?text=Halo%2C%20saya%20mau%20pesan%20jasa%20Bongkar%20Rumah">Pesan
+                            href="https://wa.me/628813877153?text=Halo%2C%20saya%20mau%20pesan%20jasa%20Urug%20dan%20Suplai%20Tanah">Pesan
                             via WhatsApp <svg class="icon">
                                 <use href="#i-arrow" />
                             </svg></a>
                     </article>
                     <article class="card card--service reveal">
-                        <span class="card__icon card__icon--onPrimary"><svg class="icon">
-                                <use href="#i-layers" />
-                            </svg></span>
-                        <h3>Urug &amp; Ratakan Tanah</h3>
-                        <p>Suplai tanah merah berkualitas untuk peninggian lahan atau perataan sebelum bangun.</p>
+                        <div class="card__media">
+                            <img src="images/services/angkut-sampah-proyek.jpg"
+                                alt="Angkut sampah sisa proyek renovasi di Depok" loading="lazy" />
+                        </div>
+                        <h3>Jasa Angkut Sampah Proyek</h3>
+                        <p>Sisa kardus, plastik, styrofoam, dan sampah campuran sisa proyek diangkut cepat tanpa
+                            mengganggu jadwal kerja.</p>
                         <a class="card__link"
-                            href="https://wa.me/628813877153?text=Halo%2C%20saya%20mau%20pesan%20jasa%20Urug%20Tanah">Pesan
+                            href="https://wa.me/628813877153?text=Halo%2C%20saya%20mau%20pesan%20jasa%20Angkut%20Sampah%20Proyek">Pesan
                             via WhatsApp <svg class="icon">
                                 <use href="#i-arrow" />
                             </svg></a>
                     </article>
                     <article class="card card--service reveal">
-                        <span class="card__icon card__icon--onPrimary"><svg class="icon">
-                                <use href="#i-pickup" />
-                            </svg></span>
-                        <h3>Sewa Pickup &amp; Dump Truck</h3>
-                        <p>Butuh armada buat pindahan atau angkut material sendiri? Bisa harian atau per-rit.</p>
-                        <a class="card__link"
-                            href="https://wa.me/628813877153?text=Halo%2C%20saya%20mau%20sewa%20Pickup%2FDump%20Truck">Pesan
-                            via WhatsApp <svg class="icon">
-                                <use href="#i-arrow" />
-                            </svg></a>
-                    </article>
-                    <article class="card card--service reveal">
-                        <span class="card__icon card__icon--onPrimary"><svg class="icon">
-                                <use href="#i-shovel" />
-                            </svg></span>
-                        <h3>Penggalian Tanah</h3>
-                        <p>Gali pondasi, kolam, atau saluran air — dikerjakan secara manual maupun pakai alat berat.</p>
-                        <a class="card__link"
-                            href="https://wa.me/628813877153?text=Halo%2C%20saya%20mau%20pesan%20jasa%20Penggalian%20Tanah">Pesan
-                            via WhatsApp <svg class="icon">
-                                <use href="#i-arrow" />
-                            </svg></a>
-                    </article>
-                    <article class="card card--service reveal">
-                        <span class="card__icon card__icon--onPrimary"><svg class="icon">
-                                <use href="#i-broom" />
-                            </svg></span>
-                        <h3>Bersihkan Lahan Kosong</h3>
-                        <p>Land clearing sebelum proyek mulai, termasuk angkut sampah dan semak yang menumpuk.</p>
+                        <div class="card__media">
+                            <img src="images/services/bersihkan-lahan.jpg"
+                                alt="Bersihkan lahan dari sampah kebun di Depok" loading="lazy" />
+                        </div>
+                        <h3>Jasa Bersihkan Lahan</h3>
+                        <p>Land clearing sebelum proyek mulai — daun, ranting, dan sampah kebun yang menumpuk diangkut
+                            tuntas.</p>
                         <a class="card__link"
                             href="https://wa.me/628813877153?text=Halo%2C%20saya%20mau%20pesan%20jasa%20Bersihkan%20Lahan">Pesan
+                            via WhatsApp <svg class="icon">
+                                <use href="#i-arrow" />
+                            </svg></a>
+                    </article>
+                    <article class="card card--service reveal">
+                        <div class="card__media">
+                            <img src="images/services/angkut-material.jpg"
+                                alt="Angkut material proyek pakai dump truck di Depok" loading="lazy" />
+                        </div>
+                        <h3>Jasa Angkut Material</h3>
+                        <p>Butuh armada buat angkut material bangunan sendiri? Truk kami siap disewa harian sesuai
+                            kebutuhan proyek kamu.</p>
+                        <a class="card__link"
+                            href="https://wa.me/628813877153?text=Halo%2C%20saya%20mau%20pesan%20jasa%20Angkut%20Material">Pesan
+                            via WhatsApp <svg class="icon">
+                                <use href="#i-arrow" />
+                            </svg></a>
+                    </article>
+                    <article class="card card--service reveal">
+                        <div class="card__media">
+                            <img src="images/services/pindahan.jpg" alt="Jasa pindahan rumah dan kantor di Depok"
+                                loading="lazy" />
+                        </div>
+                        <h3>Jasa Pindahan</h3>
+                        <p>Bantu pindahan rumah, kost, kantor, apartemen, sampai gudang pakai armada dump truck yang
+                            sama — cocok untuk barang dalam jumlah banyak.</p>
+                        <a class="card__link"
+                            href="https://wa.me/628813877153?text=Halo%2C%20saya%20mau%20pesan%20jasa%20Pindahan">Pesan
                             via WhatsApp <svg class="icon">
                                 <use href="#i-arrow" />
                             </svg></a>
@@ -388,6 +404,72 @@
                 </div>
             </div>
         </section>
+
+        <!-- ============ DOKUMENTASI PEKERJAAN ============ -->
+        <section class="section" id="dokumentasi-pekerjaan">
+            <div class="wrap">
+                <header class="section__head reveal">
+                    <p class="eyebrow">Bukti di Lapangan</p>
+                    <h2>Dokumentasi Pekerjaan</h2>
+                    <p class="section__sub">Aktivitas pengangkutan puing kami di berbagai lokasi Depok.</p>
+                </header>
+
+                <div class="doc-filter reveal">
+                    <button class="doc-filter__btn is-active" data-filter="all">Semua</button>
+                    <button class="doc-filter__btn" data-filter="renovasi">Renovasi Rumah</button>
+                    <button class="doc-filter__btn" data-filter="bongkar">Bongkar Bangunan</button>
+                    <button class="doc-filter__btn" data-filter="komersial">Proyek Komersial</button>
+                </div>
+
+                <div class="doc-grid">
+                    <div class="doc-grid__item reveal" data-category="renovasi" role="button" tabindex="0">
+                        <img src="images/documentation/1.jpeg" alt="Renovasi rumah di Beji" loading="lazy" />
+                    </div>
+                    <div class="doc-grid__item reveal" data-category="bongkar" role="button" tabindex="0">
+                        <img src="images/documentation/2.jpeg" alt="Bongkar bangunan di Pancoran Mas"
+                            loading="lazy" />
+                    </div>
+                    <div class="doc-grid__item reveal" data-category="komersial" role="button" tabindex="0">
+                        <img src="images/documentation/3.jpeg" alt="Proyek komersial di Sukmajaya" loading="lazy" />
+                    </div>
+                    <div class="doc-grid__item reveal" data-category="renovasi" role="button" tabindex="0">
+                        <img src="images/documentation/4.jpeg" alt="Renovasi rumah di Cilodong" loading="lazy" />
+                    </div>
+                    <div class="doc-grid__item reveal" data-category="bongkar" role="button" tabindex="0">
+                        <img src="images/documentation/5.jpeg" alt="Bongkar bangunan di Cimanggis" loading="lazy" />
+                    </div>
+                    <div class="doc-grid__item reveal" data-category="komersial" role="button" tabindex="0">
+                        <img src="images/documentation/6.jpeg" alt="Proyek komersial di Tapos" loading="lazy" />
+                    </div>
+                    <div class="doc-grid__item reveal" data-category="renovasi" role="button" tabindex="0">
+                        <img src="images/documentation/7.jpeg" alt="Renovasi rumah di Sawangan" loading="lazy" />
+                    </div>
+                    <div class="doc-grid__item reveal" data-category="bongkar" role="button" tabindex="0">
+                        <img src="images/documentation/8.jpeg" alt="Bongkar bangunan di Bojongsari" loading="lazy" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lightbox -->
+        <div class="doc-lightbox" id="docLightbox">
+            <button class="doc-lightbox__close" aria-label="Tutup">
+                <svg class="icon">
+                    <use href="#i-close" />
+                </svg>
+            </button>
+            <button class="doc-lightbox__prev" aria-label="Foto sebelumnya">
+                <svg class="icon">
+                    <use href="#i-arrow" />
+                </svg>
+            </button>
+            <button class="doc-lightbox__next" aria-label="Foto berikutnya">
+                <svg class="icon">
+                    <use href="#i-arrow" />
+                </svg>
+            </button>
+            <img src="" alt="" class="doc-lightbox__img" id="docLightboxImg" />
+        </div>
 
         <!-- ============ SEBELUM & SESUDAH ============ -->
         <section class="section" id="sebelum-sesudah">
@@ -401,11 +483,11 @@
 
                 <div class="compare reveal" id="compareSlider">
                     <div class="compare__scene compare__scene--after" aria-hidden="true">
-                        <img src="images/hasil-kerja/after.jpeg" alt="Sesudah - lokasi bersih" class="compare__image" />
+                        <img src="images/work-result/after.jpeg" alt="Sesudah - lokasi bersih" class="compare__image" />
                         <span class="compare__tag compare__tag--after">Sesudah</span>
                     </div>
                     <div class="compare__scene compare__scene--before" aria-hidden="true">
-                        <img src="images/hasil-kerja/before.jpeg" alt="Sebelum - lokasi berpuing"
+                        <img src="images/work-result/before.jpeg" alt="Sebelum - lokasi berpuing"
                             class="compare__image" />
                         <span class="compare__tag compare__tag--before">Sebelum</span>
                     </div>
@@ -453,7 +535,7 @@
         </section>
 
         <!-- ============ CTA BAND ============ -->
-        <section class="cta">
+        <section class="cta" id="cta">
             <div class="wrap cta__inner reveal">
                 <h2>Yuk, Bikin Proyek Kamu<br>Bebas Puing.</h2>
                 <p>Chat sekarang, biar tim kami yang mikirin sisanya.</p>
@@ -469,13 +551,17 @@
                 <div class="cta__social">
                     <span>Lihat keseharian tim kami:</span>
                     <a href="https://www.instagram.com/sahrul48486" target="_blank" rel="noopener"
-                        aria-label="Instagram Buang Puing Depok"><svg class="icon">
+                        aria-label="Instagram Buang Puing Depok">
+                        <svg class="icon">
                             <use href="#i-instagram" />
-                        </svg> Instagram</a>
+                        </svg> Instagram
+                    </a>
                     <a href="https://www.tiktok.com/@gugunn210?_r=1&_t=ZS-98KYXrbNVDs" target="_blank" rel="noopener"
-                        aria-label="TikTok Buang Puing Depok"><svg class="icon">
+                        aria-label="TikTok Buang Puing Depok">
+                        <svg class="icon">
                             <use href="#i-tiktok" />
-                        </svg> TikTok</a>
+                        </svg> TikTok
+                    </a>
                 </div>
             </div>
         </section>
@@ -496,10 +582,10 @@
                     <p>Melayani seluruh wilayah Kota Depok dan beberapa area perbatasan terdekat dengan respon cepat.
                     </p>
                     <div class="chips">
-                        <span>Margonda</span><span>Beji</span><span>Pancoran Mas</span>
-                        <span>Sukmajaya</span><span>Cilodong</span><span>Tapos</span>
-                        <span>Cimanggis</span><span>Sawangan</span><span>Cinere</span>
-                        <span>Bojongsari</span>
+                        <span>Beji</span><span>Pancoran Mas</span><span>Cipayung</span>
+                        <span>Sukmajaya</span><span>Cilodong</span><span>Cimanggis</span>
+                        <span>Tapos</span><span>Sawangan</span><span>Bojongsari</span>
+                        <span>Limo</span><span>Cinere</span>
                     </div>
                 </div>
             </div>
