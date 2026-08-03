@@ -225,61 +225,6 @@
             </div>
         </section>
 
-        <!-- ============ KEUNTUNGAN ============ -->
-        <section class="section" id="keuntungan">
-            <div class="wrap">
-                <header class="section__head reveal">
-                    <p class="eyebrow">Kenapa Banyak yang Pilih Kami</p>
-                    <h2>Bukan Cuma Angkut, Tapi Bikin Tenang</h2>
-                </header>
-                <div class="grid grid--3">
-                    <div class="card card--flat reveal">
-                        <span class="card__icon"><svg class="icon">
-                                <use href="#i-clock" />
-                            </svg></span>
-                        <h3>Respon Kilat</h3>
-                        <p>Chat sekarang, tim survei bisa meluncur hari ini juga kalau armada sedang standby.</p>
-                    </div>
-                    <div class="card card--flat reveal">
-                        <span class="card__icon"><svg class="icon">
-                                <use href="#i-tag" />
-                            </svg></span>
-                        <h3>Harga di Depan</h3>
-                        <p>Estimasi biaya kami kasih sebelum kerja mulai. Tidak ada tambahan biaya dadakan.</p>
-                    </div>
-                    <div class="card card--flat reveal">
-                        <span class="card__icon"><svg class="icon">
-                                <use href="#i-truck" />
-                            </svg></span>
-                        <h3>Armada Siap Pakai</h3>
-                        <p>Truk kami standby dan siap meluncur begitu jadwal disepakati, tanpa nunggu antrean armada.
-                        </p>
-                    </div>
-                    <div class="card card--flat reveal">
-                        <span class="card__icon"><svg class="icon">
-                                <use href="#i-users" />
-                            </svg></span>
-                        <h3>Tenaga Berpengalaman</h3>
-                        <p>Tim lapangan terbiasa kerja rapi, hati-hati, dan paham aturan buang puing yang benar.</p>
-                    </div>
-                    <div class="card card--flat reveal">
-                        <span class="card__icon"><svg class="icon">
-                                <use href="#i-route" />
-                            </svg></span>
-                        <h3>Jangkauan Luas</h3>
-                        <p>Melayani seluruh Depok dan wilayah perbatasan — Cinere, Sawangan, sampai Cimanggis.</p>
-                    </div>
-                    <div class="card card--flat reveal">
-                        <span class="card__icon"><svg class="icon">
-                                <use href="#i-shield" />
-                            </svg></span>
-                        <h3>Garansi Bersih Tuntas</h3>
-                        <p>Kami tidak pergi sebelum lokasi benar-benar bersih, bukan cuma "kelihatan kosong".</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
         <!-- ============ TENTANG KAMI ============ -->
         <section class="section section--alt" id="tentang">
             <div class="wrap about">
@@ -329,14 +274,38 @@
                     </article>
                     <article class="card card--service reveal">
                         <div class="card__media">
-                            <img src="images/services/urug-suplai-tanah.jpg"
+                            <img id="urugImg" src="images/services/urug-4kubik.jpg"
                                 alt="Suplai tanah merah untuk urugan proyek di Depok" loading="lazy" />
                         </div>
                         <h3>Jasa Urug &amp; Suplai Tanah</h3>
                         <p>Tanah merah berkualitas untuk peninggian lahan atau perataan, diantar dan dituang langsung di
                             lokasi.</p>
-                        <a class="card__link"
-                            href="https://wa.me/628813877153?text=Halo%2C%20saya%20mau%20pesan%20jasa%20Urug%20dan%20Suplai%20Tanah">Pesan
+
+                        <div class="capacity-picker" role="radiogroup" aria-label="Pilih kapasitas armada urug tanah">
+                            <button type="button" class="capacity-picker__btn is-active" data-capacity="4"
+                                data-label="Truk Engkel" data-image="images/services/urug-4kubik.jpg"
+                                data-alt="Suplai tanah merah untuk urugan proyek di Depok" role="radio"
+                                aria-checked="true">
+                                <span class="capacity-picker__size">4 m&sup3;</span>
+                                <span class="capacity-picker__label">Truk Engkel</span>
+                            </button>
+                            <button type="button" class="capacity-picker__btn capacity-picker__btn--vip"
+                                data-capacity="7" data-label="Truk Dam Besar"
+                                data-image="images/services/urug-7kubik.jpeg"
+                                data-alt="Truk dam besar 7 kubik layanan VIP urug tanah Depok" role="radio"
+                                aria-checked="false">
+                                <span class="capacity-picker__size">7 m&sup3;</span>
+                                <span class="capacity-picker__label">Truk Dam Besar</span>
+                            </button>
+                        </div>
+
+                        <p class="capacity-picker__note" data-note-for="4">Pas untuk gang sempit &amp; kebutuhan urug
+                            skala kecil–menengah.</p>
+                        <p class="capacity-picker__note" data-note-for="7" hidden>Armada lebih besar,
+                            diprioritaskan lebih cepat, dan jangkauan antar lebih jauh.</p>
+
+                        <a class="card__link" id="urugWaLink"
+                            href="https://wa.me/628813877153?text=Halo%2C%20saya%20mau%20pesan%20jasa%20Urug%20dan%20Suplai%20Tanah%20(4%20m%C2%B3%2C%20Truk%20Engkel)">Pesan
                             via WhatsApp <svg class="icon">
                                 <use href="#i-arrow" />
                             </svg></a>
@@ -513,6 +482,61 @@
                         <span class="compare__handle-icon"><svg class="icon">
                                 <use href="#i-drag" />
                             </svg></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ KEUNTUNGAN ============ -->
+        <section class="section" id="keuntungan">
+            <div class="wrap">
+                <header class="section__head reveal">
+                    <p class="eyebrow">Kenapa Banyak yang Pilih Kami</p>
+                    <h2>Bukan Cuma Angkut, Tapi Bikin Tenang</h2>
+                </header>
+                <div class="grid grid--3">
+                    <div class="card card--flat reveal">
+                        <span class="card__icon"><svg class="icon">
+                                <use href="#i-clock" />
+                            </svg></span>
+                        <h3>Respon Kilat</h3>
+                        <p>Chat sekarang, tim survei bisa meluncur hari ini juga kalau armada sedang standby.</p>
+                    </div>
+                    <div class="card card--flat reveal">
+                        <span class="card__icon"><svg class="icon">
+                                <use href="#i-tag" />
+                            </svg></span>
+                        <h3>Harga di Depan</h3>
+                        <p>Estimasi biaya kami kasih sebelum kerja mulai. Tidak ada tambahan biaya dadakan.</p>
+                    </div>
+                    <div class="card card--flat reveal">
+                        <span class="card__icon"><svg class="icon">
+                                <use href="#i-truck" />
+                            </svg></span>
+                        <h3>Armada Siap Pakai</h3>
+                        <p>Truk kami standby dan siap meluncur begitu jadwal disepakati, tanpa nunggu antrean armada.
+                        </p>
+                    </div>
+                    <div class="card card--flat reveal">
+                        <span class="card__icon"><svg class="icon">
+                                <use href="#i-users" />
+                            </svg></span>
+                        <h3>Tenaga Berpengalaman</h3>
+                        <p>Tim lapangan terbiasa kerja rapi, hati-hati, dan paham aturan buang puing yang benar.</p>
+                    </div>
+                    <div class="card card--flat reveal">
+                        <span class="card__icon"><svg class="icon">
+                                <use href="#i-route" />
+                            </svg></span>
+                        <h3>Jangkauan Luas</h3>
+                        <p>Melayani seluruh Depok dan wilayah perbatasan — Cinere, Sawangan, sampai Cimanggis.</p>
+                    </div>
+                    <div class="card card--flat reveal">
+                        <span class="card__icon"><svg class="icon">
+                                <use href="#i-shield" />
+                            </svg></span>
+                        <h3>Garansi Bersih Tuntas</h3>
+                        <p>Kami tidak pergi sebelum lokasi benar-benar bersih, bukan cuma "kelihatan kosong".</p>
                     </div>
                 </div>
             </div>

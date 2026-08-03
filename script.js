@@ -83,6 +83,44 @@ handle.addEventListener('keydown', (e) => {
   if (e.key === 'ArrowRight') setSliderPosition(current + 5);
 });
 
+// ============ CAPACITY PICKER (Jasa Urug & Suplai Tanah) ============
+const capacityBtns = document.querySelectorAll('.capacity-picker__btn');
+const urugWaLink = document.getElementById('urugWaLink');
+const urugImg = document.getElementById('urugImg');
+const urugMedia = urugImg ? urugImg.closest('.card__media') : null;
+
+capacityBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    const capacity = btn.dataset.capacity;
+    const label = btn.dataset.label;
+
+    capacityBtns.forEach(b => {
+      b.classList.remove('is-active');
+      b.setAttribute('aria-checked', 'false');
+    });
+    btn.classList.add('is-active');
+    btn.setAttribute('aria-checked', 'true');
+
+    document.querySelectorAll('.capacity-picker__note').forEach(note => {
+      note.hidden = note.dataset.noteFor !== capacity;
+    });
+
+    if (urugImg && urugMedia && btn.dataset.image && urugImg.getAttribute('src') !== btn.dataset.image) {
+      urugMedia.classList.add('is-swapping');
+      setTimeout(() => {
+        urugImg.src = btn.dataset.image;
+        urugImg.alt = btn.dataset.alt || urugImg.alt;
+        urugMedia.classList.remove('is-swapping');
+      }, 200);
+    }
+
+    if (urugWaLink) {
+      const message = `Halo, saya mau pesan jasa Urug dan Suplai Tanah (${capacity} m³, ${label})`;
+      urugWaLink.href = `https://wa.me/628813877153?text=${encodeURIComponent(message)}`;
+    }
+  });
+});
+
 // ============ DOKUMENTASI: FILTER & LIGHTBOX ============
 const docFilterBtns = document.querySelectorAll('.doc-filter__btn');
 const docGalleryItems = document.querySelectorAll('.doc-grid__item');
