@@ -124,6 +124,8 @@ capacityBtns.forEach(btn => {
 // ============ DOKUMENTASI: FILTER & LIGHTBOX ============
 const docFilterBtns = document.querySelectorAll('.doc-filter__btn');
 const docGalleryItems = document.querySelectorAll('.doc-grid__item');
+const docGrid = document.querySelector('.doc-grid');
+const docMoreBtn = document.getElementById('docMoreBtn');
 const docLightbox = document.getElementById('docLightbox');
 const docLightboxImg = document.getElementById('docLightboxImg');
 const docLightboxClose = docLightbox.querySelector('.doc-lightbox__close');
@@ -132,6 +134,59 @@ const docLightboxNext = docLightbox.querySelector('.doc-lightbox__next');
 
 let docVisibleItems = [];
 let docCurrentIndex = 0;
+
+// Mobile: Check if we're on mobile (<768px)
+const isMobile = () => window.matchMedia('(max-width: 767px)').matches;
+
+// Mobile: Update which items should be hidden (4th item onwards)
+function updateMobileDocGrid() {
+  if (!isMobile() || !docGrid) return;
+
+  // Remove all --extra classes first
+  docGalleryItems.forEach(item => item.classList.remove('doc-grid__item--extra'));
+
+  // Get currently visible items (not hidden by filter)
+  const visibleItems = Array.from(docGalleryItems).filter(
+    item => !item.classList.contains('is-hidden')
+  );
+
+  // Add --extra class to items beyond the first 3
+  visibleItems.forEach((item, index) => {
+    if (index >= 3) {
+      item.classList.add('doc-grid__item--extra');
+    }
+  });
+
+  // Show/hide button based on whether there are more than 3 visible items
+  if (docMoreBtn) {
+    docMoreBtn.style.display = visibleItems.length > 3 ? 'inline-flex' : 'none';
+  }
+
+  // Reset expanded state when filter changes
+  docGrid.classList.remove('is-expanded');
+}
+
+// Mobile: Handle "Lihat Selengkapnya" button click
+if (docMoreBtn) {
+  docMoreBtn.addEventListener('click', () => {
+    if (!isMobile()) return;
+    docGrid.classList.add('is-expanded');
+    docMoreBtn.style.display = 'none';
+  });
+}
+
+// Mobile: Handle window resize
+const mobileMediaQuery = window.matchMedia('(max-width: 767px)');
+mobileMediaQuery.addEventListener('change', () => {
+  if (!isMobile()) {
+    // When switching to desktop, remove all --extra classes and expanded state
+    docGalleryItems.forEach(item => item.classList.remove('doc-grid__item--extra'));
+    docGrid.classList.remove('is-expanded');
+  } else {
+    // When switching to mobile, apply mobile logic
+    updateMobileDocGrid();
+  }
+});
 
 // Filter functionality
 docFilterBtns.forEach(btn => {
@@ -155,11 +210,17 @@ docFilterBtns.forEach(btn => {
     docVisibleItems = Array.from(docGalleryItems).filter(
       item => !item.classList.contains('is-hidden')
     );
+
+    // Update mobile grid state
+    updateMobileDocGrid();
   });
 });
 
 // Initialize visible items
 docVisibleItems = Array.from(docGalleryItems);
+
+// Initial mobile grid setup
+updateMobileDocGrid();
 
 // Lightbox open
 docGalleryItems.forEach((item, index) => {

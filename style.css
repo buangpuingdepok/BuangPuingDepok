@@ -1106,6 +1106,52 @@ ul {
     height: 20px;
 }
 
+/* ============ MOBILE: LIHAT SELENGKAPNYA ============ */
+@media (max-width: 767px) {
+    .doc-grid__item--extra {
+        display: none;
+    }
+
+    .doc-grid.is-expanded .doc-grid__item--extra {
+        display: block;
+    }
+
+    .doc-more-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        font-family: var(--font-display);
+        font-weight: 700;
+        font-size: .95rem;
+        padding: 14px 26px;
+        border-radius: 100px;
+        border: 2px solid var(--primary);
+        background: transparent;
+        color: var(--primary);
+        cursor: pointer;
+        transition: transform .18s ease, background .18s ease, border-color .18s ease, color .18s ease;
+        margin-top: 24px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .doc-more-btn:hover {
+        background: var(--primary);
+        color: #fff;
+        transform: translateY(-2px);
+    }
+
+    .doc-more-btn:active {
+        transform: translateY(0);
+    }
+}
+
+@media (min-width: 768px) {
+    .doc-more-btn {
+        display: none;
+    }
+}
+
 /* ============ FOOTER ============ */
 .footer {
     background: #fff;
