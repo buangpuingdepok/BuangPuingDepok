@@ -906,53 +906,32 @@ ul {
 
 /* ============ AREA / MAPS ============ */
 .area {
-    display: grid;
-    grid-template-columns: 1.1fr .9fr;
+    display: flex;
+    flex-direction: column;
     gap: 32px;
-    align-items: stretch;
 }
 
 .area__map {
+    position: relative;
     border-radius: var(--radius);
     overflow: hidden;
     border: 1px solid var(--border);
-    min-height: 360px;
+    width: 100%;
+    min-height: 480px;
 }
 
 .area__map iframe {
+    position: absolute;
+    inset: 0;
     width: 100%;
     height: 100%;
-    min-height: 360px;
-    border-radius: var(--radius);
     border: 0;
 }
 
 .area__info {
-    background: #fff;
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    padding: 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    max-width: 640px;
 }
 
-.chips {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-top: 20px;
-}
-
-.chips span {
-    padding: 8px 16px;
-    border-radius: 100px;
-    background: var(--bg-alt);
-    border: 1px solid var(--border);
-    font-size: .85rem;
-    font-weight: 600;
-    color: var(--ink-soft);
-}
 
 /* ============ DOKUMENTASI PEKERJAAN ============ */
 .doc-filter {
@@ -1338,10 +1317,6 @@ ul {
 
     .steps::before {
         display: none;
-    }
-
-    .area {
-        grid-template-columns: 1fr;
     }
 
     .footer__grid {
