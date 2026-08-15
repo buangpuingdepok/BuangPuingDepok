@@ -809,14 +809,25 @@ ul {
     top: 0;
     bottom: 0;
     left: 50%;
-    width: 4px;
-    background: #fff;
+    width: 48px;
     transform: translateX(-50%);
     cursor: ew-resize;
     display: flex;
     align-items: center;
     justify-content: center;
-    touch-action: pan-y;
+    touch-action: none;
+}
+
+.compare__handle::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: #fff;
+    transform: translateX(-50%);
+    pointer-events: none;
 }
 
 .compare__handle-icon {
@@ -829,11 +840,25 @@ ul {
     align-items: center;
     justify-content: center;
     box-shadow: 0 6px 16px rgba(0, 0, 0, .25);
+    position: relative;
+    z-index: 2;
 }
 
 .compare__handle-icon .icon {
     width: 20px;
     height: 20px;
+}
+
+@media (max-width: 768px) {
+    .compare__handle-icon {
+        width: 48px;
+        height: 48px;
+    }
+
+    .compare__handle-icon .icon {
+        width: 24px;
+        height: 24px;
+    }
 }
 
 /* ============ CTA BAND ============ */
